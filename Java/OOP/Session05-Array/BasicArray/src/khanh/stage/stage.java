@@ -6,7 +6,7 @@ import java.util.Arrays;
 
 public class stage {
     public static  void main(String[] args) {
-        sortPrimitives();
+        playWithObjectArrayV2();
     }
 
     // primitive - biến đơn giá trị, 1 vùng ram 1 giá trị, KO CÓ BAO GIỜ CHẤM PRIMITIVE HENG
@@ -204,6 +204,22 @@ public class stage {
         s1 = null;  // trỏ đáy ram cho tao
         // gán tọa độ địa chỉ 0 vào s1
         s1.showProfile();
+    }
+
+    public static void playWithObjectArrayV2() {
+        Student[] arr = new Student[2];
+        arr[0] = new Student("SE123456", "AN NGUYỄN", 2001, 9.0);
+        arr[1] = new Student("SE123457", "BÌNH LÊ", 2000, 5.7);
+
+        System.out.println("The student list");
+        for (Student x: arr) {
+            // x = a[0];    x = arr[1]; | 2 chàng x và arr[0] cùng trỏ new AN
+            //                          |         x    arr[1]              BÌNH
+            x.showProfile();
+        }
+        // sắp mảng tăng dần theo điểm trung bình
+        // lí thuyết, bạn [0] sẽ phải có điểm 5
+        //                [1]                 9
     }
 
     public static void playWithAStudent() {
