@@ -5,8 +5,8 @@ import khanh.data.Student;
 import java.util.Arrays;
 
 public class stage {
-    public static  void main(String[] args) {
-        playWithObjectArrayV2();
+    public static void main(String[] args) {
+        sortObjectArrayV3();
     }
 
     // primitive - biến đơn giá trị, 1 vùng ram 1 giá trị, KO CÓ BAO GIỜ CHẤM PRIMITIVE HENG
@@ -125,12 +125,16 @@ public class stage {
         // a = 5 đúng, mà 5 lại nằm trong b
         // Tao lớn hơn mày, ko đúng chỗ, tao đổi mày, mày lại đổi cho tao
         // Thực tế tao cần nhỏ hơn mày (sort tăng dần)
-        int t = a;  // giữ lại value của a 9 trước khi a bị mất, thay đổi
-                    // backup a lại đã
-                    // temporary, temp, tmp
-        a = b;  // a = 5 đúng rồi, tao muốn lấy giá trị nhỏ của mày
-                // a mất ngay giá trị cũ, tại 1 điểm biến chỉ có 1 kiểu ON/OFF thôi | chỉ 1 value thôi
-        b = t;  // b = giá trị cũ cảu a mới đúng, tức là giá trị là 9 trước đó của a, đang nằm trong t
+        // -> Cho nên chỉ đổi, sắp xếp khi bị lộn xộn thứ tự, khi a > b lộn xộn tăng dần
+        // NẾU ĐỨNG TRƯỚC MÀ LỚN HƠN VỀ VALUE, RÕ RÀNG PHẢI ĐỔI VALUE
+        if (a > b) {
+            int t = a;  // giữ lại value của a 9 trước khi a bị mất, thay đổi
+            // backup a lại đã
+            // temporary, temp, tmp
+            a = b;  // a = 5 đúng rồi, tao muốn lấy giá trị nhỏ của mày
+            // a mất ngay giá trị cũ, tại 1 điểm biến chỉ có 1 kiểu ON/OFF thôi | chỉ 1 value thôi
+            b = t;  // b = giá trị cũ cảu a mới đúng, tức là giá trị là 9 trước đó của a, đang nằm trong t
+        }
         System.out.println("a: " + a + " | b: " + b);
 
     }
@@ -163,6 +167,64 @@ public class stage {
         // -> SẮP XẾP MẢNG OBJECT CHẲNG QUA LÀ ĐỔI CHỖ TRỎ, VỊ TRÍ TRỎ, VALUE CON TRỎ
     }
 
+    public static void sortObjectArrayV2() {
+        Student[] arr = new Student[2]; // 50 biến sinh viên, chưa có ai cụ thể
+        // Có 3 biến sv, + biến má mì
+        arr[0] = new Student("SE123456", "AN NGUYỄN", 2001, 9.0);
+        arr[1] = new Student("SE123457", "BÌNH LÊ", 2000, 5.0);
+        // [0] đừng trỏ điểm to, sẽ bị in trước, in trước thì ko tăng dần
+        // [0] nên trỏ điểm nhỏ thì hay hơn
+        Student x;
+        x = arr[0]; // cho tớ trỏ điểm 9 chung với heng
+        arr[0] = arr[1];    // int a 5; int b = a;  cho tao b xin value của mày a
+        // đầu bảng xin trỏ 5 thay vì 9
+        arr[1] = x;         // chỗ ngồi kế đầu bảng xin trỏ lại 9 ngày xưa của anh [0]
+        // NEW BÌNH ĐANG ĐƯƠC 2 CON TRỎ CÙNG TRỎ, CHỨNG MINH
+        System.out.println("After sorting by GPA:");
+        for (int i = 0; i < arr.length; i++) {
+            arr[i].showProfile();
+        }
+
+        /*
+            Phần tử đầu của mảng thay vì trỏ vùng new 9.0, nay nó trỏ vùng new 5.0
+            SẮP XẾP MẢNG OBJECT, VÙNG NEW GIỮ NGUYÊN
+            ĐỔI CÁCH TRỎ [i] TRONG MẢNG
+            [thằng đầu mảng] trỏ vùng new nhỏ 5.0
+            [thằng kế mảng] trỏ vùng new to 9.0
+         */
+    }
+
+    public static void sortObjectArrayV3() {
+        Student[] arr = new Student[2];
+        // Có 3 biến sv, + biến má mì
+        arr[0] = new Student("SE123456", "AN NGUYỄN", 2001, 8.0);
+        arr[1] = new Student("SE123457", "BÌNH LÊ", 2000, 6.0);
+        System.out.println("Before sorting list students");
+        for (Student x: arr) {
+            x.showProfile();
+        }
+        /*
+            TUYỆT ĐỐI KHÔNG DÙNG TOÁN TỬ > < = != CHO CÁC BIIẾN OBJECT
+            VÌ ĐI SO SÁNH TỌA ĐỘ/ ĐỊA CHỈ LÀ VÔ NGHĨA
+            CHẤM BÊN TRONG ĐỊA CHỈ, CHẤM BÊN TRONG TỌA ĐỘ, VÀO TRONG OBJECT
+            VÀO TRONG OBJECT LẤY VALUE KHÁC RA MÀ XE, MÀ SO SÁNH
+            sv1 so sánh sv2 là vó vẩn, s1.gpa so sánh sv2.gpa thì còn có lí nghe chưa
+            tao ngồi ghế 0 mà điểm lại lớn hơn mày ngồi ghế 1
+            -> Tao với mày phải swap thôi, swap điểm ăn đòn nghe chưa, ở đây swap trỏ/swap 2 object
+         */
+        if (arr[0].getGpa() > arr[1].getGpa()) {
+            Student x;
+            x = arr[0];
+            arr[0] = arr[1];
+
+            arr[1] = x;
+        }
+
+        System.out.println("After sorting by GPA:");
+        for (int i = 0; i < arr.length; i++) {
+            arr[i].showProfile();
+        }
+    }
 
     public static void playWithObjectArray() {
         // lưu 50 con số dãy fibo, chẵn
@@ -212,7 +274,7 @@ public class stage {
         arr[1] = new Student("SE123457", "BÌNH LÊ", 2000, 5.7);
 
         System.out.println("The student list");
-        for (Student x: arr) {
+        for (Student x : arr) {
             // x = a[0];    x = arr[1]; | 2 chàng x và arr[0] cùng trỏ new AN
             //                          |         x    arr[1]              BÌNH
             x.showProfile();
