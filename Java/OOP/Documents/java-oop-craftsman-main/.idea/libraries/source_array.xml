@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="source_array">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/source_array/SE1602-StudentManagement.zip!/" />
+      <root url="jar://$PROJECT_DIR$/source_array/SE1526-BasicArray.zip!/" />
+      <root url="jar://$PROJECT_DIR$/source_array/SE1525-StudentManagement.zip!/" />
+      <root url="jar://$PROJECT_DIR$/source_array/SE1529-StudentManagement.zip!/" />
+      <root url="jar://$PROJECT_DIR$/source_array/SE1526-StudentManagement.zip!/" />
+      <root url="jar://$PROJECT_DIR$/source_array/SE1526-StudentManagement-V2.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
