@@ -58,17 +58,14 @@ public class Shelf {
 
         // - Todo: kiểm tra id trùng; Regular expression kiểm tra chuỗi nhập đúng định dạng ko
         System.out.println("Input student #" + (count + 1) + "/" + ds.length);
-        System.out.println("Input id: ");                     // 1 / 300
-        id = MyToys.getString(sc.nextLine(), "Lỗi rồi vui lòng nhập lại");
+//        System.out.println("Input id: ");                     // 1 / 300
+        id = MyToys.getString("Input id: ", "Lỗi rồi vui lòng nhập lại");
 
-        System.out.println("Input name: ");
-        name = MyToys.getString(sc.nextLine(), "Lỗi rồi nhập lại bạn ơi");
+        name = MyToys.getString("Input name: ", "Lỗi rồi nhập lại bạn ơi");
 
-        System.out.println("Input yob: ");
-        yob = MyToys.getAnInteger(sc.nextLine(), "Lỗi rồi bạn ơi hãy thử lại");
+        yob = MyToys.getAnInteger("Input yob: ", "Lỗi rồi bạn ơi hãy thử lại");
 
-        System.out.println("Input gpa: ");
-        gpa = MyToys.getADouble(sc.nextLine(), "Lỗi rồi bạn ơi hãy thử lại");
+        gpa = MyToys.getADouble("Input gpa: ", "Lỗi rồi bạn ơi hãy thử lại");
 
         ds[count] = new Student(id, name, yob, gpa);
         count += 1; // SIÊU VIP PRO, THIẾU LÀ TOANG CMNR
@@ -83,5 +80,25 @@ public class Shelf {
                                     // HẠ CÁNH NƠI ANH, TRỎ ĐÁY RAM, MÀ ÉP ĐÁY RAM CÓ CODE SHOWPROFILE() LÀ QUÁ ĐÁNG LẮM LUÔN KO?
                                     // VÙNG NEW STUDENT(...) THÌ MỚI CÓ CODE MÀ CHẠY CHỨ
         }
+    }
+
+    public void searchAStudent() {
+        // Search là quét/duyệt/đi từ trái sang phải lôi cổ từng sv[i] ra hỏi mày Id là mấy?
+        // Sau đó đi so sánh với mã số mà mình muốn tìm == mã số sv[i] sv[i].getId()
+        // Báo tìm thấy hoặc tìm hết ko thấy -> báo Not found
+        // ĐÂY LÀ THUẬT TOÁN TRÂU BÒ/VÉT CẠN/TÁT CẠN
+        String id = MyToys.getID("Input the id that you want to search: ", "Vui lòng nhập lại không hợp lệ", "SE00000");
+        for (int i = 0; i < count; i++) {   // Ở đây đi đến chỗ đổ cuối cùng heng, chỗ count làm cờ đã đếm vị trí cuối cùng được đổ là bao nhiêu
+            if(ds[i].getId().equalsIgnoreCase(id)) {
+                System.out.println("Student found !!! Here she/he is");
+                ds[i].showProfile();
+                return; // TÌM THẤY THÌ DỪNG HÀM LUÔN, KHÔNG CẦN CHẠY LẶP FOR CHI NỮA
+                        // NẾU ĐÃ TÌM THẤY Ở VỊ TRÍ GIỮA MẢNG KO PHẢI CUỐI MẢNG THÌ CHẠY THÊM CHI CHO PHÍ TÀI NGUYÊN CPU
+            }
+        }
+        // Sống sót ở đây, đã chạy duyệt qua tất cả các object có trong mảng nhưng ko thấy
+        // đi hết for rồi mà vẫn ko thoát được, show ra câu thông báo
+        System.out.println("Not found the student you want");
+        // Ở đây ngoài ra còn có thủ thuật dùng biến cờ FLAG/MARKER để phất cờ khi tìm thấy hoặc ko, và if() check để đưa ra câu thông báo phù hợp
     }
 }
