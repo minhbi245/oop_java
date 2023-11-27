@@ -2,16 +2,19 @@ package data;
 
 // OOP: Object Oriented Programming/Paradigm
 public class Disk {
+
+    public static final double PI = 3.14;
+
     private String owner;
     private String color;
-    private double width;   // ___________
-    private double length;  // ___________
+    private String smile;
+    private double radius;
 
-    public Disk(String owner, String color, double width, double length) {
+    public Disk(String owner, String color, String smile, double radius) {
         this.owner = owner;
         this.color = color;
-        this.width = width;
-        this.length = length;
+        this.smile = smile;
+        this.radius = radius;
     }
 
     public String getOwner() {
@@ -30,20 +33,20 @@ public class Disk {
         this.color = color;
     }
 
-    public double getWidth() {
-        return width;
+    public String getSmile() {
+        return smile;
     }
 
-    public void setWidth(double width) {
-        this.width = width;
+    public void setSmile(String smile) {
+        this.smile = smile;
     }
 
-    public double getLength() {
-        return length;
+    public double getRadius() {
+        return radius;
     }
 
-    public void setLength(double length) {
-        this.length = length;
+    public void setRadius(double radius) {
+        this.radius = radius;
     }
 
     @Override
@@ -51,12 +54,18 @@ public class Disk {
         return "Disk{" +
                 "owner='" + owner + '\'' +
                 ", color='" + color + '\'' +
-                ", width=" + width +
-                ", length=" + length +
+                ", smile='" + smile + '\'' +
+                ", radius=" + radius +
                 '}';
     }
 
     public void paint() {
-        System.out.printf("|RECTANGLE |%-15s|%10s|%4.1f|%4.1f|\n", owner, color, width, length);
+        System.out.printf("|DISK |%-15s|%10s|%4.1f|%4s|%7.2f|\n", owner, color, radius, smile, getArea());
+    }
+
+    public double getArea() {
+        return Math.pow(radius, 2) * Disk.PI;
+//        return Math.pow(radius, 2) * 3.14;
+//        return Math.pow(radius, 2) * Math.PI;
     }
 }
