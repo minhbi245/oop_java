@@ -15,18 +15,18 @@ package data;
 // SQUARE/HÌNH VUÔNG CÒN GỌI LÀ CLASS/KHUÔN CON, CHILD, BUB, DERIVED CLASS/ CLASS TRÍCH XUẤT/DẪN XUẤT TỪ CLASS CHA
 // SQUARE LÀ RECTANGLE, CHO NÊN SQUARE SẼ CÓ TẤT CẢ MỌI THỨ MÀ RECTANGLE CÓ, KO CẦN PHẢI VIẾT LẠI, COPY PASTE LẠI CODE
 // SQUARE LÀ RECTANGLE, NÓ PHẢI HÀNH XƯỬ NHƯ RECTANGLE, HÀM XÀI LẠI LUÔN CỦA RECTANGLE
-// KẾT THỪA KO PHẢI LÀ COPY/PASTE NHƯ HỒI NAÃY, COPY/PASTE LÀ CÁCH LƯỜI GÕ CODE
+// KẾ THỪA KO PHẢI LÀ COPY/PASTE NHƯ HỒI NÃY, COPY/PASTE LÀ CÁCH LƯỜI GÕ CODE
 // KẾ THỪA LÀ XÀI LẠI 100% MÀ KO CẦN GÕ LẠI CODE - ĐÚNG Ở NGOÀI ĐỜI LUÔN
 
 /**
  * Lưu ý khi chơi với kế thừa:
  * 1. Khi chơi với kế thừa, phải tôn trọng phễu/constructor gốc của CON
- *      SQUARE trươước khi chơi với RECTANGLE, SQUARE vẫn là SQUARE, phễu/constructor có 3 tham số
+ *      SQUARE trước khi chơi với RECTANGLE, SQUARE vẫn là SQUARE, phễu/constructor có 3 tham số
  *      Để đúc 1 SQUARE: owner, color, edge
  *      phễu/constructor SQUARE vẫn cần có phễu/constructor nhận vật liệu
  *                                          phễu chảy thẳng lên RECTANGLE, vì SQUARE là RECTANGLE
  *                                          dữ liệu của SQUARE chính là dữ liệu RECTANGLE
- *      CHO NÊN PHẢI TÔN TRỌNG CONSTRUCTOR/PHUỄ CỦA CON, ĐỘ LẠI 1 TÍ PHỄU CỦA CON
+ *      CHO NÊN PHẢI TÔN TRỌNG CONSTRUCTOR/PHỄU CỦA CON, ĐỘ LẠI 1 TÍ PHỄU CỦA CON
  */
 public class Square extends Rectangle {
 
