@@ -5,33 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="88760e10-dea2-4707-a8c4-00874d96d31b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../BeNaV4_AbstractClass/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BeNaV4_AbstractClass/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BeNaV4_AbstractClass/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BeNaV4_AbstractClass/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BeNaV4_AbstractClass/BeNaV4_AbstractClass.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BeNaV4_AbstractClass/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BeNaV4_AbstractClass/src/data/Shape.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ParentChild/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ParentChild/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ParentChild/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ParentChild/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ParentChild/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ParentChild/ParentChild.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ParentChild/src/Child.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ParentChild/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ParentChild/src/Parent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ParentChildV2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Child.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Parent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CraftsmanV3/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CraftsmanV3/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Theory/Hiểu thế nào là Kế thừa:Inheritance.rtf" beforeDir="false" afterPath="$PROJECT_DIR$/../Theory/Hiểu thế nào là Kế thừa:Inheritance.rtf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,9 +23,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2Yq5kwlqRh0UDa2XLdpJAu85w0c" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -71,6 +46,7 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -83,6 +59,7 @@
       <option name="presentableId" value="Default" />
       <updated>1701240418541</updated>
       <workItem from="1701240421348" duration="1960000" />
+      <workItem from="1701332077673" duration="650000" />
     </task>
     <servers />
   </component>
@@ -91,5 +68,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

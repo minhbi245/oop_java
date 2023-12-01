@@ -6,12 +6,17 @@ package data;
  * tương đồng: Con của Ba/Má
  * ta đang nói về cái Khuôn/Class Tổ mà sinh ra nhiều Khuôn khác
  * Shape đại diện, Cha của đám Hình Vuông, Tròn, Chuữ Nhật, Tam Giác -> đọc một chiều thôi nhé
+ * MỘT CLASS CHỨA HÀM ABSTRACT TỨC LÀ HÀM KO CODE, TỨC LÀ Ý TƯỞNG CẦN CÓ
+ * THÌ BẢN THÂN CLASS CHƯA HOÀN HẢO, CHƯA HÀNH XỬ ĐƯỢC, GIỐNG NHƯ BẢN CONCEPT
+ * NÓ CHỈ MỚI LÀ Ý TƯỞNG MÀ THOY, DO ĐÓ NẾU CLASS CHỨA HÀM ABSTRACT
+ * CLASS CŨNG PHẢI LÀ ABSTRACT
  */
 public abstract class Shape {
     // Đặc tính của Cha, của Shape/Hình học là gì???
 
     protected String owner;
     protected String color;
+    protected String borderColor; // Màu đường bo cạnh, đường biên
 
     //    protected double a, b, c, radius; // ... Còn nhiều loại cạnh khác nữa, nhưng bốc mùi lắm
     // Giả sử thằng con Hình Tròn/Disk kế thừa Shape, thê sthif nó có cạnh
@@ -23,9 +28,10 @@ public abstract class Shape {
     // TUYỆT ĐỐI KO ĐỂ DỊ BIỆT LÊN CHA/TỔ, DỊ BIỆT CỦA TỪNG ĐỨA CON MÀ
 
 
-    public Shape(String owner, String color) {
+    public Shape(String owner, String color, String borderColor) {
         this.owner = owner;
         this.color = color;
+        this.borderColor = borderColor;
     }
 
     public String getOwner() {
@@ -44,6 +50,14 @@ public abstract class Shape {
         this.color = color;
     }
 
+    public String getBorderColor() {
+        return borderColor;
+    }
+
+    public void setBorderColor(String borderColor) {
+        this.borderColor = borderColor;
+    }
+
     // Hành động tiếp theo, hàm của tui???
     // Tính diện tích, chu vi???
     // Hàm xử lí data!!!!, ai có nhiều thông tin/info thì kẻ đó sẽ phải xử lí!!!!
@@ -56,9 +70,20 @@ public abstract class Shape {
     // CHỐT HẠ: HÌNH HỌC LUÔN PHẢI BÀN VỀ MÀU SẮC, CHU VI, DIỆN TÍCH/S
 
     public abstract double getArea(); // Tính diện tích là khái niệm heng
-    public abstract  double getPerimeter();
 
-//    public double getArea() {
+    public abstract double getPerimeter(); // ý tưởng đo cạnh heng, từ từ tính
+    // getArea get Perimeter hình mẹ nào chả có
+
+    public abstract void paint();
+    // vì các thao tác vẽ hình là khác nhau, chưa kể in ra là khác nhau
+    // CHUỖI IN RA KHÁC NHAU, RECTANGLE, SQUARE, TRIANGLE, RIGHT TRIANGLE, DISK, ....
+    // CÃI/PHẢN BIỆN: VIẾT PAINT() HERE IS SHAPE VÀ EM IF(tg) in Tam giác
+    // if(disk) in ra DISK, if...
+    // LÀM CÁCH IF ĐƯỢC, TUY NHIÊN SẼ LÀM MẤT ĐI TÍNH LINH HOẠT DỄ MỞ RỘNG, THÍCH ỨNG VỚI MỌI LOẠI HÌNH TIẾP TỰC ĐƯỢC SINH RA SAU NÀY
+    // CÓ DÍNH TỚI 1 NGUYÊN LÍ SOLID
+
+
+    //    public double getArea() {
 //        // return ??? Éo tính được, vì thiếu cạnh, thiếu kích thước
 //        // Sai nhen, ko có hình nào mà S = 0
 //        // new Shape() chấm getArea() là toang mình rồi
