@@ -1,5 +1,5 @@
 {\rtf1\ansi\ansicpg1252\cocoartf2758
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 SourceCodePro-Regular;}
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
 {\colortbl;\red255\green255\blue255;}
 {\*\expandedcolortbl;;}
 \paperw11900\paperh16840\margl1440\margr1440\vieww37900\viewh19680\viewkind0
@@ -120,6 +120,54 @@
 	\
 \
 	\{\
+\
+==================================================================================================\
+\
+CU\uc0\u7896 C \u272 UA K\'cc TH\'da di\u7877 n ra gi\u7919 a c\'e1c \u7913 ng vi\'ean Dog, Cat, Hamster,\'85\
+- Th\'f4ng tin c\'e1c \uc0\u7913 ng vi\'ean bao g\u7891 m: t\'ean, n\u259 m sinh, c\'e2n n\u7863 ng\
+- Dog: ch\uc0\u7841 y t\u7889 i ta 40km/h\
+- Cat: ch\uc0\u7841 y t\u7889 i da 50km/h\
+- Hamster: ch\uc0\u7841 y t\u7889 i \u273 a 10km/h\
+- H\'e3y in b\uc0\u7843 ng th\'e0nh t\'edch c\u7911 a t\u7915 ng \u7913 ng vi\'ean\
+\
+* H\uc0\u7854 C N\'c3O: S\u7854 P X\u7870 P B\u7842 NG TH\'c0NH T\'cdCH CH\u7840 Y C\u7910 A C\'c1C \u7912 NG VI\'caN\
+* Ph\'e2n t\'edch b\'e0i to\'e1n:\
+- Ch\uc0\u7841 y t\u7889 i \u273 a? T\u7889 c \u273 \u7897  ch\u7841 y l\'e0 bi\u7871 n \u273 \u7893 i theo nh\u7919 ng l\u7847 n ch\u7841 y, t\u7913 c l\'e0 h\'e0m tr\u7843  v\u7873  gi\'e1 tr\u7883  bi\u7871 n \u273 \u7893 i -> t\u7913 c l\'e0 ko return 1 gi\'e1 tr\u7883  c\u7913 ng \u273 \u432 \u7907 c - t\u7913 c l\'e0 hardcode\
+	-> s\uc0\u7917  d\u7909 ng h\'e0m random() trong To\'e1n h\u7885 c, \u273 \u7875  sinh ra s\u7889  ng\u7851 u nhi\'ean\
+- Ch\uc0\u7841 y l\'e0 h\'e0nh \u273 \u7897 c/h\'e0nh vi/behavior\
+- Dog(ten, n\uc0\u259 m sinh, c\'e2n n\u7863 ng)		run()\
+- Cat(ten, n\uc0\u259 m sinh, c\'e2n n\u7863 ng)		run()\
+- Hamster(t\'ean, n\uc0\u259 m sinh, c\'e2n n\u7863 ng)		run()\
+=> T\uc0\u7840 O 3 KHU\'d4N/CLASS V\'cc 3 \u272 \u7912 A KH\'c1C NHAU R\'d5 R\'c0NG, N\u7870 U GI\u7888 NG G\u7884 I L\'c0 1 CON XYZ N\'c0O \u272 \'d3 R\u7890 I\
+- Nh\uc0\u432 ng l\u7841 i c\u7847 n s\u7855 p x\u7871 p: m\'e0 s\u7855 p x\u7871 p v\u7853 y ch\'fang c\u7847 n ph\u7843 i chung m\u7843 ng, nh\u432 ng m\'e0\
+	Dog is a kind of M\'e8o -> v\uc0\u7899  v\u7849 n\
+	M\'e8o is a kind of Hamster -> v\uc0\u7899  v\u7849 n\
+	\'85 v\uc0\u7899  v\u7849 n quanh qu\u7849 n 3 th\u7913 \
+Dog, Cat, Hamster MUST BE A KIND OF???\
+C\'e2u IS A t\uc0\u7921  nhi\'ean \u273 \u7885 c 1 chi\u7873 u, t\'ecm \u273 \u432 \u7907 c??? COI NH\u431  SORT \u272 \'c3 XONG\
+\
+=> Dog, Cat, Hamster IS A ANIMAL	\uc0\u7892 N KO SAI, NH\u431 NG KO HAY\
+=> Dog, Cat, Hamster IS A KIND OF Pet m\uc0\u7899 i l\'e0 hay!!!\
+\
+H\'ccNH NH\uc0\u431  \u272 ANG N\'d3I V\u7872  PH\'c2N LO\u7840 I TRONG CU\u7896 C S\u7888 NG -> N\'d3 \u272 \'d3\
+\
+	Dog, Cat, Hamster,\'85		-> Pet\
+	Elephant, Zebra, Tiger	->			ANIMAL\
+			Person			->\
+\
+		C\'e2y c\uc0\u7889 i							  +		            CREATURE\
+											        Sinh v\uc0\u7853 t tr\'ean tr\'e1i \u273 \u7845 t\
+	LO\'c0I CHI H\uc0\u7884  L\u7898 P B\u7896  NG\'c0NH\'85\
+\
+Xe may, Xe h\uc0\u417 i, Xe t\u7843 i, Xe \u273 \u7847 u k\'e9o, Xe kh\'e1c	-> IS A VECHICLE\
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
-\cf0 \
+\cf0 	May bay, T\'e0u h\uc0\u7887 a, T\'e0u th\u7911 y, Du Thuy\u7873 n			(ph\u432 \u417 ng ti\u7879 n)\
+\
+Ghim b\uc0\u7845 m, K\u7865 p gi\u7845 y, Keo gi\'e1n, Chu\u7889 t b\'fat ch\'ec, Bao t\u7853 p\
+B\'eca l\'e1, Folder, H\uc0\u7897 p nh\u7921 a \u273 \u7921 ng, Con d\u7845 u, M\u7921 c, Gi\u7867  ch\'f9i b\u7843 n    -> V\u258 N PH\'d2NG PH\u7848 M\
+\
+C\'e1 \uc0\u273 \'f4ng l\u7841 nh, T\'f4m \u273 \'f4ng l\u7841 nh, Ch\'e2n g\'e0, th\u7883 t g\'e0, v\u7883 t \'85 -> TH\u7920 C PH\u7848 M \u272 \'d4NG L\u7840 NH\
+\
+\uc0\u272 \u7862 T T\'caN V\'c0 PH\'c2N LO\u7840 I L\'c0 C\'c1CH M\'c0 CON NG\u431 \u7900 I QU\u7842 N L\'cd TH\'d4NG TIN/ INFO QUANH M\'ccNH\
+\
 }

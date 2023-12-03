@@ -31,7 +31,7 @@ public class Rectangle extends Shape {
          @Override
          // TA KO ĐEM BÁN ĐƯỢC, VÌ CHƯÂ HOÀN HẢO ĐÓ
      */
-    private double a, b; // a: width, b: length
+    protected double a, b; // a: width, b: length
 
     public Rectangle(String owner, String color, String borderColor, double a, double b) {
         super(owner, color, borderColor);
@@ -71,6 +71,6 @@ public class Rectangle extends Shape {
 
     @Override
     public void paint() {
-        System.out.printf("|RECTANGLE|%-10s|%-10s|%-10s|%4.1f|%4.1f|%7.2f|\n", owner, color, borderColor, a, b, getA());
+        System.out.printf("|RECTANGLE|%-10s|%-10s|%-10s|%4.1f|%4.1f|%7.2f|\n", owner, color, borderColor, a, b, getArea());
     }
 }
