@@ -13,7 +13,8 @@ public class Dog extends Pet {
     @Override
     public double run() {
         // Random rd = new Random()
-        return new Random().nextDouble() * MAX_SPEED;
+        return new Random().nextDouble() * MAX_SPEED;   // Nhắc lại về bài 7 viên ngọc rồng
+                                                        // Về Anonymous Class, new chấm luôn method của nó
     }
 
     @Override

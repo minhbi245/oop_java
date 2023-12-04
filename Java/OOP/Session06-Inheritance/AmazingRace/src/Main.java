@@ -18,5 +18,10 @@ public class Main {
 
         ngaoDa.showRecord();
         beTo.showRecord();
+
+        // run() ở đây là đa hình rồi các con ơi
+        // if (arr[i].run() > a[j].run) KHÓ VÌ MÓA, MỖI LẦN NÓ FOR QUA VÒNG MỚI LÀ RUN() THẰNG I, J LÀ KHÁC NHAU
+        // BÀI VỀ SHAPE LÀ DIỆN TÍCH, HAY STUDENT THÌ ĐIỂM TRUNG BÌNH HAY DIỆN TÍCH LÀ CỐ ĐỊNH LÚC SORT, FOR KO ĐỔI DIỆN TÍCH, ĐIỂM
+        // RUN() GỌI RANDOM ÉO CỐ ĐỊNH
     }
 }

@@ -43,7 +43,7 @@ public abstract class Pet {
     // -> ngầm hiểu là xử lý khác nhau
     // Vậy việc chạy là 1 ý tưởng chung chung mà loài pet nó cần có
     // Chạy là 1 thứ đi kèm Pet, còn cụ thể thế nào thì là tùy từng đứa
-    // => ABSTRACT METHOD. CAIS GÌ MÀ ÉO CỤ THỂ KHI ĐEỀ CẬP VÊỀ NÓ => SURE CHUNG CHUNG
+    // => ABSTRACT METHOD. CÁI GÌ MÀ ÉO CỤ THỂ KHI ĐỀ CẬP VỀ NÓ => SURE CHUNG CHUNG
     //                              ABSTRACT
 
     public abstract double run();
