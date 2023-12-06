@@ -2,7 +2,7 @@
 \cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fnil\fcharset0 Monaco;}
 {\colortbl;\red255\green255\blue255;}
 {\*\expandedcolortbl;;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww36960\viewh17580\viewkind0
+\paperw11900\paperh16840\margl1440\margr1440\vieww37900\viewh19680\viewkind0
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
 
 \f0\fs28 \cf0 T\uc0\u7915  Object -> Khu\'f4n/Class l\'e0 \u272 \'e0 n\'e2ng t
@@ -863,13 +863,404 @@ MANH M
 - V\uc0\u7869  cho tao c\'e1i h\'ecnh, Shape Abstract\
 - \uc0\u272 i mua xe m\'e1y \u273 i?\
 \
-- GI\uc0\u7842 I TH\'cdCH C\u7848 N TH\u7852 N KHI NEW ABSTRACT!!! H\u7884 C SAU\
+- GI
+\f1 \uc0\u7842 
+\f0 I TH\'cdCH C
+\f1 \uc0\u7848 
+\f0 N TH\uc0\u7852 N KHI NEW ABSTRACT!!! H\u7884 C SAU\
 \
 ===========================================================================================================\
 \
 C\'d3 2 LO\uc0\u7840 I KHU\'d4N/CLAS:\
-1. KHU\'d4N/CLASS HO\'c0N CH\uc0\u7880 NH, KO CH\u7912 A H\'c0M ABSTRACT, CONCRETE/C\u7908  TH\u7874 / R\u7900 I R\u7840 C/ R\'d5 R\'c0NG\
-	- C\'e1c h\'e0nh \uc0\u273 \u7897 ng c\'f3 \u273 \u7911  code th\u7921 c thi trong \{\'85\}\
-	- N\uc0\u7871 u c\'f3 Con, Con ko c\u7847 n implement g\'ec c\u7843 , Cha \u273 \'e3 \u273 \u7911  code r\u7891 i, Con th\'edch th\'ec @override th\'f4i\
+1. KHU\'d4N/CLASS HO\'c0N CH
+\f1 \uc0\u7880 
+\f0 NH, KO CH\uc0\u7912 A H\'c0M ABSTRACT, CONCRETE/C\u7908  TH
+\f1 \uc0\u7874 
+\f0 / R\uc0\u7900 I R\u7840 C/ R\'d5 R\'c0NG\
+	- C\'e1c h\'e0nh \uc0\u273 \u7897 ng c\'f3 \u273 
+\f1 \uc0\u7911 
+\f0  code th\uc0\u7921 c thi trong \{\'85\}\
+	- N
+\f1 \uc0\u7871 
+\f0 u c\'f3 Con, Con ko c
+\f1 \uc0\u7847 
+\f0 n implement g\'ec c
+\f1 \uc0\u7843 
+\f0 , Cha \uc0\u273 \'e3 \u273 
+\f1 \uc0\u7911 
+\f0  code r
+\f1 \uc0\u7891 
+\f0 i, Con th\'edch th\'ec @override th\'f4i\
+\
+2. KHU\'d4N/CLASS KH\'d4NG HO\'c0N CH
+\f1 \uc0\u7880 
+\f0 NH/CH\uc0\u7912 A H\'c0M ABSTRACT, H\'c0M KO C\'d3 CODE TH\u7920 C THI\
+- b
+\f1 \uc0\u7843 
+\f0 n th\'e2n n\'f3 l\'e0 ko ho\'e0n ch
+\f1 \uc0\u7881 
+\f0 nh, v\'ec ch
+\f1 \uc0\u7881 
+\f0  c\'f3 t\'ean h\'e0m m\'e0 ko c\'f3 code th\uc0\u7921 c thi, n\'f3 v
+\f1 \uc0\u7851 
+\f0 n c\'f3 quy
+\f1 \uc0\u7873 
+\f0 n c\'f3 h\'e0m kh\'e1c m\'e0 ko c\'f3 code th\uc0\u7921 c thi b\'ean trong code block\
+- V
+\f1 \uc0\u7873 
+\f0  m\uc0\u7863 t l\'ed thuy
+\f1 \uc0\u7871 
+\f0 t, khi new ABSTRACT class th\'ec khi ch
+\f1 \uc0\u7845 
+\f0 m c\'e1i h\'e0m ko code, KO C\'d3 CODE \uc0\u272 
+\f1 \uc0\u7874 
+\f0  TH\uc0\u7920 C THI/CH\u7840 Y\
+- new Cha ABSTRACT th\'ec ko c\'f3 code \uc0\u273 
+\f1 \uc0\u7875 
+\f0  CH\uc0\u7840 Y/TH\u7920 C THI!!!\
+- new Shape(\'85), new Pet(\'85) .run() .paint() .getArea() \'e9o c\'f3 code l
+\f1 \uc0\u7845 
+\f0 y g\'ec \uc0\u273 
+\f1 \uc0\u7875 
+\f0  CH\uc0\u7840 Y/TH\u7920 C THI!!!\
+\
+TR\uc0\u7914  PHI\'85 N
+\f1 \uc0\u7870 
+\f0 U V
+\f1 \uc0\u7850 
+\f0 N NGOAN C
+\f1 \uc0\u7888 
+\f0  NEW ABSTRACT CLASS TH\'cc\'85\
+\
+- N
+\f1 \uc0\u7871 
+\f0 u ABSTRACT CLASS C\'d3 CON, th\'ec CON C\'d3 2 PH\uc0\u431 \u416 NG \'c1N M\'ccNH \u272 \'c3 H\u7884 C R
+\f1 \uc0\u7890 
+\f0 I (1. V\'d4 SINH LU\'d4N, KO NEW, L\'c0 ABSTRACT CLASS LU\'d4N. 2 L\'c0 PH
+\f1 \uc0\u7842 
+\f0 I IMPLEMENT VI
+\f1 \uc0\u7870 
+\f0 T H
+\f1 \uc0\u7870 
+\f0 T CODE TH\uc0\u7920 C THI CHO H\'c0M ABSTRACT C
+\f1 \uc0\u7910 
+\f0 A CHA)\
+- Gi
+\f1 \uc0\u7843 
+\f0  b\uc0\u7897  ta t\u7853 p trung ph
+\f1 \uc0\u7847 
+\f0 n IMPLEMENT H\'c0M CHA< CHA N\'d3I CON L\'c0M\
+- Con @Override h
+\f1 \uc0\u7871 
+\f0 t h\'e0m abstract c
+\f1 \uc0\u7911 
+\f0 a Cha, CON c\'f3 quy
+\f1 \uc0\u7873 
+\f0 n l\'e0m th\'eam d\uc0\u7883  bi\u7879 t nh\u432  b\'ecnh th\u432 \u7901 ng\'85\
+\
+* V\'d9NG NH\uc0\u7898  C
+\f1 \uc0\u7910 
+\f0 A CON, V\'d9NG NEW C
+\f1 \uc0\u7910 
+\f0 A CON S\uc0\u7868  CHI
+\f1 \uc0\u7870 
+\f0 M TH
+\f1 \uc0\u7870 
+\f0  N\'c0O TRONG RAM (Ko quan t\'e2m Con k
+\f1 \uc0\u7871 
+\f0  th\uc0\u7915 a l\'e0 Cha C\u7909  th
+\f1 \uc0\u7875 
+\f0  hay tr\uc0\u7915 u t\u432 \u7907 ng: BAO G
+\f1 \uc0\u7890 
+\f0 M\
+\
+	- V\'d9NG NEW C
+\f1 \uc0\u7910 
+\f0 A CHA, SUPER() \uc0\u272 \'d3, KO CARE CHA C\u7908  TH
+\f1 \uc0\u7874 
+\f0 /HAY ABSTRACT\
+		BA S\uc0\u7868  L\'c0 C\'c1NH CHIM, \u272 \u431 A CON BAY/EXTENDS M
+\f1 \uc0\u7902 
+\f0  R\uc0\u7896 NG TH\'caM\
+		V\'d9NG NH\uc0\u7898  CON BAO V\'d9NG NH\u7898  CHA, \u272 
+\f1 \uc0\u7874 
+\f0  CON \uc0\u272 \u431 \u7906 C K
+\f1 \uc0\u7870 
+\f0  TH\uc0\u7914 A, C\'d3 S
+\f1 \uc0\u7860 
+\f0 N M\'c0 D\'d9NG \uc0\u272 
+\f1 \uc0\u7890 
+\f0  CHA\
+\
+	- PH
+\f1 \uc0\u7846 
+\f0 N M
+\f1 \uc0\u7902 
+\f0  R\uc0\u7896 NG/EXTENDS, TRONG H\'c0M \u272 \'c2Y CH\u7912 A\
+		D\uc0\u7882  BI\u7878 T HO\'c0N TO\'c0N T\u7914  CON, H\'c0M, BI
+\f1 \uc0\u7870 
+\f0 N/\uc0\u272 \u7862 C \u272 I
+\f1 \uc0\u7874 
+\f0 M RI\'caNG C
+\f1 \uc0\u7910 
+\f0 A CON. EX: HCN: C\'d3 TH\'caM 2 C\uc0\u7840 NH WIDTH, LENGHT\
+		PH
+\f1 \uc0\u7846 
+\f0 N @OVERRIDE/CON TR\'d9NG T\'caN H\'c0M CHA -> KO B
+\f1 \uc0\u7854 
+\f0 T BU\uc0\u7896 C N
+\f1 \uc0\u7870 
+\f0 U M\'c0 CHA C\uc0\u7908  TH
+\f1 \uc0\u7874 
+\f0 /CONCRETE CLASS!!! TH\'cdCH TH\'cc L\'c0M, @OVERRIDE L\uc0\u7840 I/ V\u431 \u7906 T M\u7862 T CHA, V\'cc \u272 \u7856 NG N\'c0O C\u360 NG C\'d3 CHA \u272 
+\f1 \uc0\u7910 
+\f0  \uc0\u272 
+\f1 \uc0\u7874 
+\f0  X\'c0I\
+\
+	- PH
+\f1 \uc0\u7846 
+\f0 N @OVERRIDE/ CON TR\'d9NG T\'caN H\'c0M CHA\
+										B
+\f1 \uc0\u7854 
+\f0 T BU\uc0\u7896 C PH
+\f1 \uc0\u7842 
+\f0 I C\'d3 N
+\f1 \uc0\u7870 
+\f0 U CHA L\'c0 ABSTRACT CLASS/TR\uc0\u7914 U T\u431 \u7906 NG, CHA KO HO\'c0N H
+\f1 \uc0\u7842 
+\f0 O, CON B
+\f1 \uc0\u7854 
+\f0 T BU\uc0\u7896 C PH
+\f1 \uc0\u7842 
+\f0 I CODE/IMPLEMENT\
+		PH
+\f1 \uc0\u7842 
+\f0 I VI
+\f1 \uc0\u7870 
+\f0 T CODE CHO CHA, N
+\f1 \uc0\u7870 
+\f0 U CHA L\'c0 ABSTRACT/TR\uc0\u7914 U T\u431 \u7906 NG\
+\
+* T
+\f1 \uc0\u7892 
+\f0 NG K
+\f1 \uc0\u7870 
+\f0 T C\'d4NG TH\uc0\u7912 C CON CH\u416 I V\u7898 I CHA TR\u7914 U T\u431 \u7906 NG\
+\
+	CON = NEW CHA()/SUPPER() CHA TH\'cc PH
+\f1 \uc0\u7842 
+\f0 I ++++++ @OVERRIDE CHO T
+\f1 \uc0\u7844 
+\f0 T C
+\f1 \uc0\u7842 
+\f0  C\'c1C H\'c0M ABSTRACT C
+\f1 \uc0\u7910 
+\f0 A CHA \
+\
+* C\'c2U H
+\f1 \uc0\u7886 
+\f0 I: L\'c0M SAO \uc0\u272 
+\f1 \uc0\u7874 
+\f0  C\'d3 \uc0\u272 \u431 \u7906 C 1 OBJECT - V\'d9NG NEW??? TRONG OOP\
+	1. Ta c
+\f1 \uc0\u7847 
+\f0 n 1 Khu\'f4n/Class\
+	2. G\uc0\u7885 i new + ph
+\f1 \uc0\u7877 
+\f0 u/constructor \uc0\u273 
+\f1 \uc0\u7875 
+\f0  xin v\'f9ng RAM/clone v\'f9ng RAM t\uc0\u7915  Khu\'f4n/Class + g\'f5i ph
+\f1 \uc0\u7877 
+\f0 u/constructor \uc0\u273 
+\f1 \uc0\u7875 
+\f0  \uc0\u273 
+\f1 \uc0\u7893 
+\f0  v\uc0\u7853 t li\u7879 u v\'e0o\
+									new xong l\'e0 c\'f3 object, t\uc0\u7885 a \u273 \u7897  object lu\'f4n\
+	3. \uc0\u272 
+\f1 \uc0\u7875 
+\f0  kh\'f4ng b\uc0\u7883  GARBAGE COLLECTOR H
+\f1 \uc0\u7888 
+\f0 T/D\uc0\u7884 N D\u7864 P v\'f9ng new th\'ec c
+\f1 \uc0\u7847 
+\f0 n bi
+\f1 \uc0\u7871 
+\f0 n object \uc0\u273 \u7863 t t\'ean cho object, bi
+\f1 \uc0\u7871 
+\f0 n object tr
+\f1 \uc0\u7887 
+\f0  v\'f9ng new\
+\
+	- N
+\f1 \uc0\u7870 
+\f0 U TA MU
+\f1 \uc0\u7888 
+\f0 N C\'d3 1 H\'ccNH CH\uc0\u7918  NH\u7852 T:\
+	1. Ta c
+\f1 \uc0\u7847 
+\f0 n Khu\'f4n/Class Rectangle - KHU\'d4N \uc0\u272 
+\f1 \uc0\u7910 
+\f0  CODE M\uc0\u7898 I H\'c0NH X
+\f1 \uc0\u7916 
+\f0  \uc0\u272 \u431 \u7906 C, CH
+\f1 \uc0\u7844 
+\f0 M \uc0\u272 \u431 \u7906 C CH\u7840 Y \u272 \u431 \u7906 C\
+	2. new Rectangle(???)\
+	3. Rectangle x = new Rectangle(???)\
+\
+* LI\'caN QUAN \uc0\u272 
+\f1 \uc0\u7870 
+\f0 N H\'ccNH H\uc0\u7884 C, BI
+\f1 \uc0\u7870 
+\f0 T TH\uc0\u7914 A C\'d3 NH\u7918 NG H\'ccNH BI
+\f1 \uc0\u7870 
+\f0 T R\'d5 NH\'d3M CON L\'c0 VU\'d4NG, TR\'d2N, CH\uc0\u7918  NH\u7852 T, TAM GI\'c1C V\'c0 THU\u7896 C SHAPE\
+\
+* C\'d3 NH\uc0\u7918 NG H\'ccNH CH
+\f1 \uc0\u7880 
+\f0  BI
+\f1 \uc0\u7870 
+\f0 T N\'d3 L\'c0 H\'ccNH, KO BI
+\f1 \uc0\u7870 
+\f0 T T\'caN G\uc0\u7884 I NH\'d3M CON, NH\'d3M CHI TI
+\f1 \uc0\u7870 
+\f0 T, CH
+\f1 \uc0\u7880 
+\f0  BI
+\f1 \uc0\u7870 
+\f0 T L\'c0 H\'ccNH V
+\f1 \uc0\u7850 
+\f0 N L\'c0 SHAPE M\'c0, S() L\'c0 SAO T\'cdNH = C\'c1CH \uc0\u272 O, V\'cc M\'c0Y KO L\'c0 H\'ccNH D\u7840 NG QUEN THU\u7896 C\
+	N
+\f1 \uc0\u7870 
+\f0 U QUEN THU\uc0\u7896 C TH\'cc TAO \u272 \'c3 \u272 \u7862 T \u272 \u431 \u7906 C T\'caN NH\'d3M CON CHO M\'c0Y\
+\
+* C\'d3 XU
+\f1 \uc0\u7844 
+\f0 T HI\uc0\u7878 N NH\u7918 NG \u272 
+\f1 \uc0\u7888 
+\f0 I T\uc0\u431 \u7906 NG L\u7840 C LO\'c0I, KO H\'ccNH D\u7840 NG QUEN THU\u7896 C, H\'ccNH C
+\f1 \uc0\u7854 
+\f0 T NG
+\f1 \uc0\u7850 
+\f0 U NHI\'caN, KO BI
+\f1 \uc0\u7870 
+\f0 T X
+\f1 \uc0\u7870 
+\f0 P V\'c0O NH\'d3M N\'c0O NGO\uc0\u7840 I TR\u7914  NH\'d3M CHA!!!\
+\
+* Theo quan \uc0\u273 i
+\f1 \uc0\u7875 
+\f0 m object th\'ec \uc0\u273 \'e3 c\'f3 object \u273 \u432 \u7907 c t\u7841 o ra, co 1 h\'ecnh m\'e0, m\'e0 ko bi
+\f1 \uc0\u7871 
+\f0 t Khu\'f4n/Class l\'e0 g\'ec, ch
+\f1 \uc0\u7881 
+\f0  bi
+\f1 \uc0\u7871 
+\f0 t n\'f3 l\'e0 thu\uc0\u7897 c Khu\'f4n/Class Cha, v\'ec l\'e0 H\'ecnh h\u7885 c\
+	TA S\uc0\u7868  C\'d3 C\'c1CH T\u7840 O OBJECT V\'d4 \u272 \u7882 NH, KO QUEN THU\u7896 C, KO PH\'c2N NH\'d3M CON \u272 \u431 \u7906 C, TA NH\'ccN N\'d3 THEO D\u7840 NG \u272 \'daC T\u7914  KHU\'d4N CHA, V\'cc L\'daC N\'c0Y TA G\u7884 I N\'d3 L\'c0 H\'ccNH H\u7884 C, V\u7852 Y N\'d3 PH
+\f1 \uc0\u7842 
+\f0 I XU
+\f1 \uc0\u7844 
+\f0 T PH\'c1T T\uc0\u7914  H\'ccNH H\u7884 C\
+	T\'daC L\'c0 TA NEW H\'ccNH H\uc0\u7884 C\
+\
+* D\'d9NG K\uc0\u296  THU\u7852 T M\u431 \u7906 N GI\'d3 B
+\f1 \uc0\u7866 
+\f0  M\uc0\u258 NG, M\u431 \u7906 N SHAPE T\u7840 O OBJECT, V\'cc TA THI
+\f1 \uc0\u7870 
+\f0 U 1 C\'c1I KHU\'d4N CON C\uc0\u7908  TH
+\f1 \uc0\u7874 
+\f0 \
+	N
+\f1 \uc0\u7870 
+\f0 U C\'d3 KHU\'d4N/CLASS C\uc0\u7908  TH
+\f1 \uc0\u7874 
+\f0  (FULL CODE) NEW NGAY KHU\'d4N N\'c0Y RA H\'ccNH M\'ccNH C
+\f1 \uc0\u7846 
+\f0 N\
+\
+C\'d3 H\'ccNH, NH\uc0\u431 NG KO R\'d5, KO BI
+\f1 \uc0\u7870 
+\f0 T T\'caN KHU\'d4N/CLASS, NH\uc0\u431 NG SURE L\'c0 1 D\u7840 NG CON C
+\f1 \uc0\u7910 
+\f0 A CHA, L
+\f1 \uc0\u7844 
+\f0 Y CHA NEW LU\'d4N CHO R
+\f1 \uc0\u7890 
+\f0 I\
+\
+CON = NEW CHA/SUPER CHA + EXTENDS @OVERRIDE\
+N\'caN TAO S\uc0\u7868  NEW CHA + PH
+\f1 \uc0\u7846 
+\f0 N @OVERRIDE VI
+\f1 \uc0\u7870 
+\f0 T CODE CHO \uc0\u272 
+\f1 \uc0\u7910 
+\f0  -> V
+\f1 \uc0\u7850 
+\f0 N \uc0\u272 
+\f1 \uc0\u7842 
+\f0 M B
+\f1 \uc0\u7842 
+\f0 O C\'d4NG TH\uc0\u7912 C C
+\f1 \uc0\u7910 
+\f0 A CON\
+\
+NEW CHA + CODE @ TH\'cc V
+\f1 \uc0\u7850 
+\f0 N \uc0\u272 
+\f1 \uc0\u7842 
+\f0 M B
+\f1 \uc0\u7842 
+\f0 O C\'d4NG TH\uc0\u7912 C V\'d9NG RAM CON X\u431 A NAY - M\'c0Y \u272 
+\f1 \uc0\u7910 
+\f0  CODE\
+	T\uc0\u7840 O OBJECT M\'c0 \'c9O C
+\f1 \uc0\u7846 
+\f0 N T\uc0\u7840 O KHU\'d4N/CLASS RI\'caNG K
+\f1 \uc0\u7870 
+\f0  TH\uc0\u7914 A T\u7914  CHA, M\'c0 M\u431 \u7906 N CHA M\'c0 L\'c0M, CLASS RI\'caNG M\'c0 \'c9O C
+\f1 \uc0\u7846 
+\f0 N \uc0\u272 
+\f1 \uc0\u7872 
+\f0  C\uc0\u7852 P, G\u7884 I L\'c0 CLASS LAMGF BI
+\f1 \uc0\u7870 
+\f0 NG, CLASS KO KO TH\'c8M L\'c0M C\uc0\u7908  TH
+\f1 \uc0\u7874 
+\f0  RA, CLASS 
+\f1 \uc0\u7848 
+\f0 N DANH, ANONYMOUS CLASS\
+\
+V
+\f1 \uc0\u7850 
+\f0 N NEW \uc0\u272 \u431 \u7906 C OBJECT CON C
+\f1 \uc0\u7910 
+\f0 A SHAP M\'c0 \'c9O C
+\f1 \uc0\u7846 
+\f0 N 1 CLASS/KHU\'d4N C\uc0\u7908  TH
+\f1 \uc0\u7874 
+\f0 , V\uc0\u7852 Y TH\'cc V\'d9NG RAM CON N\'c0Y CH\'cdNH L\'c0 \u272 \u7840 I DI\u7878 N CHO 1 CLASS/KHU\'d4N L\'c0M BI
+\f1 \uc0\u7870 
+\f0 NG, L\'c0M RI\'caNG/\uc0\u272 \u7862 T T\'caN, CLASS 
+\f1 \uc0\u7848 
+\f0 N DANH\
+\
+T\uc0\u7840 O OBJECT ON THE GO, L\'c0M BI
+\f1 \uc0\u7870 
+\f0 NG T\uc0\u7840 O CLASS C\'d3 S
+\f1 \uc0\u7860 
+\f0 N!!! G\uc0\u7884 I L\'c0 ANONYMOUS CLASS\
+KO CH
+\f1 \uc0\u7880 
+\f0  \uc0\u272 \u7882 NH R\'d5 T\'caN CLASS CON M\'c0 V
+\f1 \uc0\u7850 
+\f0 N C\'d3 OBJECT CON\
+\
+* KHAI CHA NEW CHA, N\uc0\u7870 U CHA L\'c0 ABSTRACT, M\u431 \u7906 N GI\'d3 B\u7866  M\u258 NG, CHA NEW \u272 \u7904  CHO CON M\u7902  R\u7896 NG RA \u272 I CON -> VI\u7870 T CODE ON THE GO, \u272 \u7914 NG QU\'caN CH\u7844 M PH\u7848 Y, M\'c0Y L\'c0M BI\u7870 NG T\u7840 O CLASS CON\
+	\uc0\u272 \u7874  CLONE CHO NHANH, M\'c0Y CH\u416 I TR\'d2 NEW TAO NGAY \u272 I, TAO H\u7894  TR\u7906  V\'d9NG EXTENDS HO\'c0N THI\u7878 N CODE @OVERRIDE CHO TAO\
+	CHA S\uc0\u7868  L\'c0 C\'c1NH CHIM, \u272 \u431 A CON NEW ON THE GO\
+-> ANONYMOUS CLASS, V\'d9NG RAM V\uc0\u7850 N B\u7920  NH\u431  CLASS R\u7900 I, L\'c0M BI\u7870 NG \u272 \u7862 T T\'caN V\'d9NG RAM B\u7920  -> V\'d9NG RAM ANONYMOUS\
 \
 }

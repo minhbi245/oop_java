@@ -7,7 +7,52 @@ import org.w3c.dom.css.Rect;
 
 public class Main {
     public static void main(String[] args) {
-        sortShapes();
+//        sortShapes();
+        playWithAnonymousClass();
+    }
+
+
+    // Kĩ thuật tạo object/vùng new ma à ko cần Khuôn cụ thể
+    // Dành cho những object vô định hình, ko có công thưcức để tính toán và nhân bản, ko có Khuôn cố định, cắt hình ngẫu nhiên, nhưng vẫn là hình
+    // ÉO BIẾT NHÓM CON NÀO CẢ
+    // NHƯNG VẪN CHẮC CHẮN LÀ HÌNH: CÓ ĐƯỜNG NÉT, MÀU, CẠNH, BỀ MẶT
+    // ÉO CÓ CÔNG THỨC TÍNH CHUNG, ÉO NHÂN BẢN LẠI ĐƯỢC NHANH CHÒNG
+    // HCN CẮT NHANH CHÓNG, HÌNH ELIPSE NHANH, HBH NHANH
+    // HÌNH CẮT GẤP KHÚC, MỖI HÌNH LÀ DUY NHẤT, KO CẮT NHANH ĐƯỢC, KO CÓ KHUÔN
+    // OBJECT VÃNG LAI, KO THƯỜNG XUYÊN SỬ DỤNG/LÀM/GẶP
+    // DÙ LÀ HÌNH KIỂU GÌ, CÔNG THỨC CHUNG: NEW CHA/SUPER CHA + @OVERRIDE
+    public static  void playWithAnonymousClass() {
+
+        // Shape noName = new NoName(...); // Bên trong phải full code cho Cha Shape
+        // Shape x      = new Rectangle(...);//                 //
+        // CẮT NGẪU NHIÊN LÀM SAO BIẾT BAO NHIÊU CẠNH MÀ ĐƯA VÀO???
+        // CHỈ ĐƯA ĐƯỢC MÀU, TẶNG AI
+        // NẾU MUỐN RÕ RÀNG THÌ CẮT VƯƠNG, TRÒN, CHỮ NHẬT, HBH, MŨI TÊN
+        Shape vangLai = new Shape("HÌNH NGẪU NHIÊN/CHÍNH MÌNH", "GREEN", "BLUE") {
+            @Override
+            public double getArea() {
+                return 50;  // Vì hinh cụ thể, ko theo hình dạng nào, ta tự đo
+            }
+
+            @Override
+            public double getPerimeter() {
+                return 40;
+            }
+
+            @Override
+            public void paint() {
+                System.out.printf("|%-10s|%-10s|%-10s|%-10s|%4.1f|\n", "NGẪU NHIÊN", owner, color, borderColor, getArea());
+            }
+        };  // VIP
+            // mày là 1 hình, thoải mái vào mảng Shape sort nếu muốn
+            // Mày vẫn là Shape, kiểu Shape, có dđủ code cho hàm Cha/Khuôn Class
+            // Kĩ thuật mượn gió bẻ măng, mượn cha taạo Con, mượn Shape new Con
+            // NEW ABSTRACT CLASS SẼ BUNG RỘNG MÀN HÌNH GÕ CODE OVERRRIDE
+            // THỎA CÔNG THỨC CON = NEW CHA + @OVERRIDE
+            // CHỈ XÀI CÁCH NÀY NẾU CHỈ CẦN LÀM 1 OBJECT ON THE GO, MÀ LÀM BIẾN
+            // LÀM KHUÔN CON RIÊNG LẺ, THEO CÔNG THỨC NHÂN BẢN
+
+        vangLai.paint();
     }
 
     public static void sortShapes() {
