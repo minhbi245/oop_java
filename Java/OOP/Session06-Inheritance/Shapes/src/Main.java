@@ -8,7 +8,62 @@ import org.w3c.dom.css.Rect;
 public class Main {
     public static void main(String[] args) {
 //        sortShapes();
-        playWithAnonymousClass();
+        sortShapesWithAnonymousClass();
+    }
+
+    public static void sortShapesWithAnonymousClass() {
+        // Anonymous here!!!
+        Shape onTheGo = new Shape("THIS-TUI", "RANDOM", "RANDOM") {
+            @Override
+            public double getArea() {
+                // Cắt hình ngẫu nhiên, ko gọi được hlaf hình gì, S tự đo
+                return 50;
+            }
+
+            @Override
+            public double getPerimeter() {
+                return 40;
+            }
+
+            @Override
+            public void paint() {
+                System.out.printf("|%-10s|%-10s|%-10s|%-10s|%4s|%7.2f|\n", "TAKE A AWAY", owner, color, borderColor, "", getArea());
+            }
+        }; // CHẤM PHẨY - VIP
+
+        Rectangle r1 = new Rectangle("TÍA", "PINK", "MAGENTA", 5.0, 6.0);
+        Shape r2 = new Rectangle("TÍA", "MAGENTA", "PINK", 6.0, 5.0);
+
+        Square s1 = new Square("MÁ", "PINK", "MAGENTA", 7.0);
+        Rectangle s2 = new Square("MÁ", "PINK", "MAGENTA", 8.0);
+        Shape s3 = new Square("MÁ", "PINK", "MAGENTA", 9.0);
+
+        Disk d1 = new Disk("BÉ NA", "RAINBOW", "RAINBOW", 2.0);
+        Disk d2 = new Disk("GHỆ BÉ NA", "RAINBOW", "RAINBOW", 1.0);
+        Shape[] arr = new Shape[]{r1, r2, s1, s2, s3, d1, d2, onTheGo};
+        //                                                  hình ngẫu nhiên vẫn là Shape
+
+        System.out.println("The list of shapes");
+        for (Shape x : arr) {
+            x.paint();
+
+        }
+
+        // Sắp xếp tăng dần theo Diện tích/S
+        for (int i = 0; i < arr.length - 1; i++) {
+            for (int j = i; j < arr.length; j++) {
+                if (arr[i].getArea() > arr[j].getArea()) {
+                    Shape tmp = arr[i];
+                    arr[i] = arr[j];
+                    arr[j] = tmp;
+                }
+            }
+        }
+
+        System.out.println("The list of shapes sorting ascending by area ");
+        for (Shape x : arr) {
+            x.paint();
+        }
     }
 
 
@@ -21,7 +76,7 @@ public class Main {
     // HÌNH CẮT GẤP KHÚC, MỖI HÌNH LÀ DUY NHẤT, KO CẮT NHANH ĐƯỢC, KO CÓ KHUÔN
     // OBJECT VÃNG LAI, KO THƯỜNG XUYÊN SỬ DỤNG/LÀM/GẶP
     // DÙ LÀ HÌNH KIỂU GÌ, CÔNG THỨC CHUNG: NEW CHA/SUPER CHA + @OVERRIDE
-    public static  void playWithAnonymousClass() {
+    public static void playWithAnonymousClass() {
 
         // Shape noName = new NoName(...); // Bên trong phải full code cho Cha Shape
         // Shape x      = new Rectangle(...);//                 //
@@ -44,13 +99,13 @@ public class Main {
                 System.out.printf("|%-10s|%-10s|%-10s|%-10s|%4.1f|\n", "NGẪU NHIÊN", owner, color, borderColor, getArea());
             }
         };  // VIP
-            // mày là 1 hình, thoải mái vào mảng Shape sort nếu muốn
-            // Mày vẫn là Shape, kiểu Shape, có dđủ code cho hàm Cha/Khuôn Class
-            // Kĩ thuật mượn gió bẻ măng, mượn cha taạo Con, mượn Shape new Con
-            // NEW ABSTRACT CLASS SẼ BUNG RỘNG MÀN HÌNH GÕ CODE OVERRRIDE
-            // THỎA CÔNG THỨC CON = NEW CHA + @OVERRIDE
-            // CHỈ XÀI CÁCH NÀY NẾU CHỈ CẦN LÀM 1 OBJECT ON THE GO, MÀ LÀM BIẾN
-            // LÀM KHUÔN CON RIÊNG LẺ, THEO CÔNG THỨC NHÂN BẢN
+        // mày là 1 hình, thoải mái vào mảng Shape sort nếu muốn
+        // Mày vẫn là Shape, kiểu Shape, có dđủ code cho hàm Cha/Khuôn Class
+        // Kĩ thuật mượn gió bẻ măng, mượn cha taạo Con, mượn Shape new Con
+        // NEW ABSTRACT CLASS SẼ BUNG RỘNG MÀN HÌNH GÕ CODE OVERRRIDE
+        // THỎA CÔNG THỨC CON = NEW CHA + @OVERRIDE
+        // CHỈ XÀI CÁCH NÀY NẾU CHỈ CẦN LÀM 1 OBJECT ON THE GO, MÀ LÀM BIẾN
+        // LÀM KHUÔN CON RIÊNG LẺ, THEO CÔNG THỨC NHÂN BẢN
 
         vangLai.paint();
     }
@@ -83,13 +138,13 @@ public class Main {
 
         // Shape[] arr = new Shape[]{ các tọa độ vùng new() đưa vô};
         //                          [i] =
-        Shape[] arr = new Shape[] {r1, r2, s1, s2, s3, d1, d2};
+        Shape[] arr = new Shape[]{r1, r2, s1, s2, s3, d1, d2};
         //                      arr[0]
         // Shape[] arr = new Shape[] {new Disk("BÉ NA", "RAINBOW", "RAINBOW", 2.0),
         //                            new Disk("GHỆ BÉ NA", "RAINBOW", "RAINBOW", 1.0)};
 
         System.out.println("The list of shapes");
-        for (Shape x: arr) {
+        for (Shape x : arr) {
             //  x = arr[1], x = arr[1], x = arr[2], x = arr[i]...
             x.paint();  // Tính đa hình/polymorphism
             // GỌI HÀM PAINT CỦA CHA, NHƯNG 3 ĐƯA CON TỰ DĐỘNG QUA MẶT
@@ -118,7 +173,7 @@ public class Main {
         }
 
         System.out.println("The list of shapes sorting ascending by area ");
-        for (Shape x: arr) {
+        for (Shape x : arr) {
             x.paint();
         }
     }
