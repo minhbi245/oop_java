@@ -6,6 +6,7 @@ public abstract class Pet {
     protected String name;
     protected int yob;
     protected double weight;
+    protected double speed;
 
     public Pet(String name, int yob, double weight) {
         this.name = name;
@@ -13,6 +14,13 @@ public abstract class Pet {
         this.weight = weight;
     }
 
+    public double getSpeed() {
+        return speed;
+    }
+
+    public void setSpeed(double speed) {
+        this.speed = speed;
+    }
     public String getName() {
         return name;
     }
@@ -40,4 +48,7 @@ public abstract class Pet {
     // Hành động chạy và việc khoe, gáy thành tích sure là abstract
     public abstract double run();   // Chạy khác nhau
     public abstract void showRecord();  // gáy thành tích cũng khác nhau
+
+    public abstract void getSpeedRun();
+
 }

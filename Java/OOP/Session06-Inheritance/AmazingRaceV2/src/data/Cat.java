@@ -25,7 +25,12 @@ public class Cat extends Pet {
     }
 
     @Override
+    public void getSpeedRun() {
+        this.speed = new Random().nextDouble() * Cat.MAX_SPEED;
+    }
+
+    @Override
     public void showRecord() {
-        System.out.printf("|%-10s|%-10s|%4d|%4.1f|%4.1f|\n", "CAT", name, yob, weight, run());
+        System.out.printf("|%-10s|%-10s|%4d|%4.1f|%4.1f|\n", "CAT", name, yob, weight, getSpeed());
     }
 }

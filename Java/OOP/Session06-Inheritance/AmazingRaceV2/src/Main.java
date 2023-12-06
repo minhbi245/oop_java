@@ -26,20 +26,36 @@ public class Main {
         System.out.println("The records table");
         for (Pet x: racer) {
             // x = race[0], x = racer[i]
+            x.getSpeedRun();
             x.showRecord();
         }
         // TẠI THỜI ĐIỂM NÀY, VIẾT CODE THẾ NÀY, KO SORT THÀNH TÍCH ĐƯỢC
+//        for (int i = 0; i < racer.length - 1; i++) {
+//            for (int j = i + 1; j < racer.length; j++) {
+//                if (racer[i].run() > racer[j].run()) {
+//                    // Đa hình, hàm run() của Cha nhưng Con chạy tương ứng được: Hamster, Dog, Cat,...
+//                }   // Mỗi lần gọi run() để so sánh thì sẽ cho ra tốc độ khác nhau
+//                    // Bài về SV, Hình Học, diện tích hay điểm số GPA thì cố định cho n lần gọi
+//                    // Điểm TB GPA côố định cho đến khi cập nhật điểm mới
+//                    // for hoài, getGPA(), getS() cố định nê ta đảo được, sắp xếp được
+//                    // Bài Amazing Race bắt tụi nhỏ chạy 1 lượt để ghi nhận thành tích đã
+//                    // Sau đó ta sẽ so sánh trên thành tích chạy này
+//            }
+//        }
+
         for (int i = 0; i < racer.length - 1; i++) {
             for (int j = i + 1; j < racer.length; j++) {
-                if (racer[i].run() > racer[j].run()) {
-                    // Đa hình, hàm run() của Cha nhưng Con chạy tương ứng được: Hamster, Dog, Cat,...
-                }   // Mỗi lần gọi run() để so sánh thì sẽ cho ra tốc độ khác nhau
-                    // Bài về SV, Hình Học, diện tích hay điểm số GPA thì cố định cho n lần gọi
-                    // Điểm TB GPA côố định cho đến khi cập nhật điểm mới
-                    // for hoài, getGPA(), getS() cố định nê ta đảo được, sắp xếp được
-                    // Bài Amazing Race bắt tụi nhỏ chạy 1 lượt để ghi nhận thành tích đã
-                    // Sau đó ta sẽ so sánh trên thành tích chạy này
+                if (racer[i].getSpeed() > racer[j].getSpeed()) {
+                    Pet tmp = racer[i];
+                    racer[i] = racer[j];
+                    racer[j] = tmp;
+                }
             }
+        }
+
+        System.out.println("The records table after sorting ascending");
+        for (Pet p: racer) {
+            p.showRecord();
         }
     }
 }
