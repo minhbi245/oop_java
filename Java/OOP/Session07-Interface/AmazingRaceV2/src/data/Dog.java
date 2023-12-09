@@ -28,12 +28,12 @@ public class Dog extends Pet implements DeathRacer {
     // VÀO SG, CHẮC CHẮN THÊM PHẦN BỘ LỘ KHÁC: NHẬU NHỆT, GAME, CÁ ĐỘ, ĐÁNH BÀI,..
     //                                      CLB TIẾNG ANH, PHƯỢT, TỪ THIỆN, CẦU LÔNG
     @Override
-    public double runToDeath() {
+    public double runToDead() {
         return run() * 5;   // CHẠY NHANH HƠN 5 LẦN SO VỚI BT
     }
 
     @Override
     public void showHowToDeath() {
-        System.out.printf("|%-20s|%-10s|%4d|%4.1f|%4.1f|\n", "DOG-RACER", name, yob, weight, runToDeath());
+        System.out.printf("|%-20s|%-15s|%4d|%4.1f|%4.1f|\n", "DOG-RACER", name, yob, weight, runToDead());
     }
 }

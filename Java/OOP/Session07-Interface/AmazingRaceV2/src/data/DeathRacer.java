@@ -26,6 +26,6 @@ package data;
 public interface DeathRacer {
 
     // Phàm ai đã chọn nghề tham gia đua thủ, thì phải đua!!!
-    public double runToDeath(); // ko cần keyword ABSTRACT
+    public double runToDead(); // ko cần keyword ABSTRACT
     public void showHowToDeath();   // gáy bằng tổ quốc ghi công!!!
 }

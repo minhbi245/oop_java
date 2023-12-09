@@ -79,13 +79,13 @@ public class Motor implements DeathRacer {
     }
 
     @Override
-    public double runToDeath() {
+    public double runToDead() {
         // CHẠY tốc độ cao hoy, đôn nòng, xoáy nồng, đôn deên
         return run() * 3; // run() giả sử được 150 x 2 đua đến chết còn gì
     }
 
     @Override
     public void showHowToDeath() {
-        System.out.printf("|%-20s|%-15s|%8s|%11s|%5.1f|\n", "MOTOR-RACER", model, volume, vin, runToDeath());
+        System.out.printf("|%-20s|%-15s|%8s|%11s|%5.1f|\n", "MOTOR-RACER", model, volume, vin, runToDead());
     }
 }
