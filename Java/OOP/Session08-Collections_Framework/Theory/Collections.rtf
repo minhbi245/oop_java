@@ -1,0 +1,128 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2758
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 SourceCodePro-Medium;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww37900\viewh18500\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs28 \cf0 	*L\uc0\u431 U TR\u7918  CH\u416 I/X\u7916  L\'cd V\u7898 I NHI\u7872 U DATA/NHI\u7872 U OBJECT TH\'cc TA C\u7846 N MUA C\'c1I T\'daI, C\'c1I GI\u7886 , TH\'d9NG, T\u7910 , PH\'d2NG \u272 \u7874  \u272 \u7920 NG NHI\u7872 U \u272 \u7890 \
+M\'c0 MUA C\'c1I T\'daI, MUA C\'c1I T\uc0\u7910 , X\'c2Y C\'c1I PH\'d2NG TH\'cc CH\'cdNH L\'c0 TA \u272 A NEW C\'c1I T\'daI(), NEW C\'c1I T\u7910 (), NEW C\u258 N-PH\'d2NG()\
+PH\uc0\u7842 I C\'d3 M\u7896 T C\'c1I TH\'d9NG, T\u7910  CH\u7912 A TH\u7852 T \u272 \u431 \u7906 C T\u7840 O RA \u272 \u7874  TA B\u7886  \u272 \u7890  V\'d4 \u272 \u431 \u7906 C -> DO \u272 \'d3 NEW TH\'d9NG-CH\u7912 A L\'c0 CH\u7854 C CH\u7854 N PH\u7842 I C\'d3 R\u7890 I\
+\
+	C\'d2N THEO QUAN \uc0\u272 I\u7874 M L\u7852 P TR\'ccNH: NEW \u272 \u7874  C\'d3 V\'d9NG RAM L\u431 U TR\u7918  INFO + H\'c0M X\u7916  L\'cd INFO THEO ENCAPSULATION th\'ec ch\'ednh l\'e0 object n\u7857 m trong ram\
+-> t\uc0\u432 \u417 ng \u273 \u432 \u417 ng v\u7899 i m\'f3n \u273 \u7891  th\u7853 t ngo\'e0i \u273 \u7901 i, \u273 i\u7879 n tho\u7841 i tr\'ean tay b\u7841 n c\'f3 m\'e0u s\u7855 c, gi\'e1 ti\u7873 n, h\'e0nh \u273 \u7897 ng nghe g\u7885 i, ch\u7909 p \u7843 nh, b\u7841 n ph\u7843 i mua v\u7873 , nh\'e0 s\u7843 n xu\u7845 t ph\u7843 i t\u7841 o ra, new ra\
+th\'ec b\uc0\u7841 n m\u7899 i c\'f3 m\'e0 x\'e0i.\
+\
+	\uc0\u7902  \u273 \'e2y m\'ecnh tr\u7915 u t\u432 \u7907 ng h\'f3a m\'f3n \u273 \u7891  th\u7853 t th\'e0nh object trong l\u7853 p tr\'ecnh th\'ec c\u361 ng c\u7847 n new \u273 \u7875  c\'f3 v\'f9ng RAM c\'f3 data\
+\
+	MUA T\uc0\u7910  \u272 \u7920 NG NHI\u7872 U \u272 \u7890  TA C\u7846 N NEW T\u7910 () C\'d3 KH\'d4NG GIAN \u272 \u7920 NG \u272 \u7890  V\'c0 C\'c1C H\'c0NH \u272 \u7896 NG T\u431 \u416 NG \u7912 NG\
+	\
+	T\uc0\u7911  tuCuaTui = new T\u7911 ();	// Trong RAM s\u7869  c\'f3 v\'f9ng kh\'f4ng gian \u273 \u7875  \u273 \u7921 ng \u273 \u7891 \
+							// ngo\'e0i \uc0\u273 \u7901 i T\u7911  chi\u7871 m 1 g\'f3c ph\'f2ng \u273 \u7875  ta \u273 \u7921 ng \u273 \u7891 \
+	\
+	c\'e1i t\uc0\u7911  cho m\'ecnh l\'e0m g\'ec m\'ecnh l\'e0m \u273 \'f3/ecapsulation/abstraction \u273 \u7845 y\
+	Mua tivi m\'e0 ko ph\uc0\u7843 i l\'e0 smart tivi, ch\u7881  xem qua cable th\'f4i, l\'e0m sao m\'e0 n\'f3 duy\u7879 t web cho \u273 \u432 \u7907 c\
+	\uc0\u272 \'f3ng g\'f3i h\'e0nh \u273 \u7897 ng \u273 i k\'e8m object. Mua dog v\u7873  th\'ec n\'f3 gi\u7905 n v\u7899 i m\'ecnh\
+\
+	tuCuaTui.addDoVao(m\'f3n \uc0\u273 \u7891  \u273 \u432 \u7907 c \u273 \u432 a v\'e0o trong t\u7911 )	    // T\u7911  cho ph\'e9p m\'ecnh b\u7887  \u273 \u7891  v\'e0o\
+	\
+	y chang c\'e1i l\'f2 n\uc0\u432 \u7899 ng cho m\'ecnh b\u7887  con v\'e0o, \u273 \u7875  th\u7921 c hi\u7879 n vi\u7879 c n\u432 \u7899 ng\
+	LoNuong loCuaTui = new LoNuong();	// Mua l\'f2 v\uc0\u7873 , chi\u7871 m 1 g\'f3c kh\'f4ng gian trong b\u7871 p\
+	loCuaTui.addDoNuong(con g\'e0 \uc0\u273 \u7875  n\u432 \u7899 ng);\
+\
+	=> T\uc0\u7910  L\'c0 OBJECT CH\u7912 A NHI\u7872 U \u272 \u7890  \u272 \u7840 C KH\'c1C\
+	1. MUA T\uc0\u7910 			T\u7911  tuCuaTui = new T\u7911 ();\
+	2. MUA \uc0\u272 \u7890  ADD V\'d4 T\u7910 	tuCuaTui.addDoVao(m\'f3n \u273 \u7891  \u273 \u432 \u7907 c \u273 \u432 a v\'e0o trong t\u7911 ) // new/mua 1 \u273 \u7891  th\u7843 y v\'e0o t\u7911 	\
+	MUA C\'c1I T\'daI, MUA C\'c1I GI\uc0\u7886 , MUA C\'c1I T\u7910 , NEW TUI(), NEW GI\u7886 (), c\'f3 c\'e1i kh\'f3a d\'e2y k\'e9o b\u7887  m\'f3n \u273 \u7891  m\'ecnh mu\u7889 n c\u7845 t v\'e0o\
+\
+	tuiCuaTui.addMonDo(mua m\'f3n \uc0\u273 \u7891  b\u7887  v\'e0o t\'fai - new m\'f3n \u273 \u7891 ())\
+\
+	\
+	*C\'d3 2 LO\uc0\u7840 I T\u7910 \
+\
+	1. 	T\uc0\u7910  LO\u7840 I 1: FIX C\u7912 NG S\u7888  \u272 \u7890  \u272 \u7874  V\'d4, CH\u7880  \u272 \u7874  B\u7886  V\'d4 1 S\u7888  GI\u7898 I H\u7840 N M\'d3N \u272 \u7890  CH\'cdNH L\'c0 M\u7842 NG [S\u7888  \u272 \u7890  \u272 \u7874  V\'d4]\
+		M\uc0\u7842 NG CH\'cdNH L\'c0 C\'c1CH \u272 \u7874  TA KHAI B\'c1O NHI\u7872 U BI\u7870 N NHI\u7872 U CH\u7894  CH\u7912 A [FIXED S\u7888  CH\u7894 ]\
+		M\uc0\u7842 NG Y CHANG S\u7888  GH\u7870  TRONG XE \'d4 T\'d4 CH\u7902  KH\'c1C/XE KH\'c1CH [16 CH\u7894 ]/[32 CH\u7894 ]\
+								   R\uc0\u7840 P PHIM A/PH\'d2NG CHI\u7870 U A[100 GH\u7870 ]\
+		CH\uc0\u7912 A T\u7884 A \u272 \u7896  V\'d9NG NEW M\'d3N \u272 \u7890  TRONG M\u7842 NG\
+		[I] = new M\'d3N \uc0\u272 \u7890 () C\u7912  THO\u7842 I M\'c1I N\u7856 M \u272 \'c2U \u272 \'d3 TRONG V\'d9NG RAM, TA CH\u7880  LUU T\u7884 A \u272 \u7896  TH\'d4I\
+\
+	Student arr[] = new Student[100];\
+	// S\uc0\u7869  c\'f3 100 ch\u7895  ng\u7891 i cho sinh vi\'ean \'e0 nhen, ch\u432 a c\'f3 b\u7841 n n\'e0o c\u7909  th\u7875 \
+	// \uc0\u7902  \u273 \'e2y arr ch\'ednh l\'e0 bi\u7871 n m\'e1 m\'ec, t\'ean g\u7885 i t\u7855 t cho 1 c\'e1i t\u7911  c\'f3 100 ch\u7895  -> 100 v\'f9ng nh\u7899  \u273 \u432 \u7907 c t\u7841 o s\u7861 n trong c\'e1i t\u7911 \
+	// t\'ean m\uc0\u7843 ng ch\'ednh l\'e0 t\'ean g\u7885 i cho 1 c\'e1i t\u7911  fix s\u7889  ch\u7895 !!!\
+	// v\'ec n\'f3 tr\uc0\u7887  \u273 \u7871 n new [s\u7889  ch\u7895 ]\
+\
+	// b\uc0\u7887  \u273 \u7891  v\'e0o m\u7843 ng, ko c\u7847 n d\'f9ng h\'e0m, h\'e0nh \u273 \u7897 ng c\u7911 a t\u7911 , m\'e0 l\u7841 i CHO S\u7900  TI\u7870 P CH\u7894  NG\u7890 I C\u7910 A SINH VI\'caN C\'d3 S\u7860 N TRONG ARR\
+\
+	arr[0] = m\'f3n \uc0\u273 \u7891  b\u7887  v\'f4, new m\'f3n \u273 \u7891  b\u7887  v\'f4;\
+	// t\uc0\u432 \u417 ng \u273 \u432 \u417 ng v\u7899 i tuCuaTui.addMonDo(new m\'f3n \u273 \u7891 );\
+	// t\uc0\u7913 c l\'e0 tuCuaTui \u7903  v\u7883  tr\'ed 0 \u273 \u432 \u7907 c c\u7845 t m\'f3n \u273 \u7891  new m\'f3n \u273 \u7891 \
+\
+	// m\'f3n \uc0\u273 \u7891  new \u273 \u432 \u7907 c t\u7841 o ra v\'e0 n\u7857 m trong v\'f9ng nh\u7899  HEAP, n\u7857 m b\'ean ngo\'e0i c\'e1i t\u7911 , t\u7911  ch\u7881  l\u432 u danh s\'e1ch tham chi\u7871 u\
+	// t\uc0\u7911  ch\u7913 a danh s\'e1ch b\u7879 nh nh\'e2n, b\u7879 nh nh\'e2n v\u7851 n n\u7857 m trong ph\'f2ng \u273 i\u7873 u tr\u7883 \
+	// gi\uc0\u7843 ng vi\'ean gi\u7919  danh s\'e1ch sinh vi\'ean, sinh vi\'ean \u7903  qu\'ea \u273 \'e2u c\'f3 sao\
+	\
+	=> D\'d9 T\uc0\u7910  LO\u7840 I 1 HAY 2 TH\'cc \u272 \u7872 U CHUNG 1 M\u7908 C \u272 \'cdCH L\'c0 CH\u7912 A NHI\u7872 U \u272 \u7890 : \u272 \u7890  \u272 \u7874  TH\u7852 T S\u7920  V\'c0O TRONG T\u7910  HAY CH\u7880  \u272 \u7874  GI\u7918  DANH S\'c1CH THAM CHI\u7872 U \u272 \u7872 U OKIE\
+	T\uc0\u7910  H\u7890  S\u416  GI\u7918  DANH S\'c1CH THAM CHI\u7872 U, GOOGLE MEET GI\u7918  DANH S\'c1CH THAM CHI\u7870 U\
+	DANH S\'c1CH K\'cd T\'caN (T\uc0\u7910 ) CH\u7912 A THAM CHI\u7872 U\
+	\
+	T\uc0\u7910  QU\u7846 N \'c1O CH\u7912 A \u272 \u7890  TH\u7852 T LU\'d4N - M\u7842 NG PRIMITIVE VALUE L\u7844 Y X\'c0I LU\'d4N\
+\
+	2. T\uc0\u7910 /GI\u7886 /T\'daI LO\u7840 I 2: CO GI\u7842 N \u272 \u431 \u7906 C V\'d9NG KH\'d4NG GIAN CH\u7912 A \u272 \u7890  \u272 \u7874  V\'d4, THO\u7842 I M\'c1I \u272 \u7874  \u272 \u7890  V\'d4, C\u7846 N TH\'caM CH\u7894  TH\'cc C\'d3 TH\'caM CH\u7894 \
+	KO C\uc0\u7846 N XIN, C\u7912  \u272 \u7874  \u272 \u7890  V\'d4 L\'c0 TH\'caM CH\u7894 , GI\u7888 NG N\u7890 I C\u416 M TH\u7840 CH SANH, GI\u7888 NG GI\u7870 NG KH\u416 I, M\'daC N\u431 \u7898 C L\'c0 L\u7840 I C\'d3 N\u431 \u7898 C, T\'daI KH\'d4NG \u272 \'c1Y\
+\
+		ArrayList, Vector			|	HashSet, TreeSet        |    HashMap, TreeMap\
+	\
+	Ban \uc0\u273 \u7847 u ko c\'f3 ch\u7895  n\'e0o c\u7843 , ko \u273 \'e1y\
+	c\uc0\u7913  nh\'e9t \u273 \u7891  v\'f4, tao th\'eam ch\u7895  cho\
+	ko s\uc0\u7901  th\'f4ng qua [i] v\'e0o v\u7883  tr\'ed ch\u7895 \
+	m\'e0 s\uc0\u7869  xin qua d\'e2y k\'e9o, kh\'f3a, ng\u259 n, c\'e1nh c\u7917 a, m\u7903  ra nh\'e9t \u273 \u7891  v\'f4\
+	tuCuaTui[i] = m\'f3n \uc0\u273 \u7891  b\u7887  v\'f4\
+	tuCuaTui.add(m\'f3n \uc0\u273 \u7891  b\u7887  v\'f4)	// b\u7887  \u273 \u7891  v\'f4 qua h\'e0nh \u273 \u7897 ng c\u7911 a t\u7911 , ko s\u7901  tr\u7921 c ti\u7871 p ng\u259 n ch\u7913 a [i]\
+\
+	C\uc0\u7913  b\u7887  v\'f4, t\u7921  t\u7911  lo b\'ean trong n\'f3\
+	V\uc0\u7850 N CODE NH\u431  X\u431 A NAY: NEW T\u7910 , . CH\u7844 M G\u7884 I H\'c0NH \u272 \u7896  C\u7910 A T\u7910  \u272 \u7890  NEW RI\'caNG \u272 \u7874  V\'d4 MUA T\u7910  V\'c0 MUA \u272 \u7890  V\'c0 C\u7844 T V\'c0O T\u7910 \
+\
+	NEW 3 LO\uc0\u7840 I T\u7910  N\'c0Y, GI\u7888 NG C\'c1C TH\u431 \u416 NG HI\u7878 U T\'daI X\'c1C/T\u7910 /BALO M\'c0 B\u7840 N MUA TH\'d4I\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 		ArrayList, Vector			|	HashSet, TreeSet        |    HashMap, TreeMap\
+	\
+	ADD(M\'d3N \uc0\u272 \u7890  KH\'c1C \u272 I MUA) V\'c0O T\u7910  \u7902  NG\u7854 N TH\u7912  [I] n\'e0o \u273 \'f3 nh\'ecn theo ki\u7875 u m\u7843 ng\
+	\uc0\u272 \u7872 U CH\u7912 A THAM CHI\u7870 U, LINH HO\u7840 T TRONG VI\u7878 C \u272 \u7874  C\'c1C M\'d3N \u272 \u7890 \
+						B\uc0\u7878 NH NH\'c2N \u272 \'c2U C\u7846 N D\u7890 N V\'c0O PH\'d2NG B\'c1C S\u296 , B\'c1C S\u296  V\u7850 N \u272 I\u7872 U TR\u7882  \u272 \u431 \u7906 C\
+						V\'cc B\'c1C S\uc0\u296  C\'d3 DANH S\'c1CH B\u7878 NH NH\'c2N TRONG T\u7910  H\u7890  S\u416  EXCEL\
+\
+	T\uc0\u7911  th\u7853 t, t\'fai th\u7853 t mua v\u7873  \u273 \u7875  m\'e0 x\'e0i th\'f4i, NEW \u272 \u431 \u7906 C, KH\'d4NG PH\u7842 I L\'c0 ABSTRACT, HO\'c0N H\u7842 O \u272 \u7874  D\'d9NG, FULL CODE H\'c0NH \u272 \u7896 NG\
+		ArrayList, Vector			|	HashSet, TreeSet        |    HashMap, TreeMap\
+	Ph\'e2n lo\uc0\u7841 i cao h\u417 n cho t\u7911 /gi\u7903 \
+	c\uc0\u7909  th\u7875 \
+\
+	CHA/		List							 Set                           Map (b\uc0\u7843 n \u273 \u7897  l\'e0 \'e1nh x\u7841  t\u7915  c\'e1i n\'e0y ra c\'e1i kia)\
+INTERFACE/  danh s\'e1ch					   t\uc0\u7853 p h\u7907 p                  b\u7897  \'e1nh x\u7841 , t\u7915  n\'e0y m\'e0 ra kia\
+ABSTRACTION										                KEY, M\'d3N \uc0\u272 \u7890  - VALUE\
+\
+\
+		v\'e0o th\uc0\u7913  t\u7921  n\'e0o			   HashSet l\u7897 n x\u7897 n th\u7913  t\u7921 \
+	  	ra th\uc0\u7913  t\u7921  n\u7845 y			   TreeSet s\u7855 p x\u7871 p t\u7921  \u273 \u7897 ng!!!\
+		m\uc0\u7843 ng n\'e2ng cao			   ko \u273 \u432 \u7907 c l\u7863 p l\u7841 i m\'f3n \u273 \u7891  l\u7847 n\
+		co gi\'e3n k\'edch th\uc0\u432 \u7899 c		   th\u7913  2\
+		v\'e0o tr\uc0\u432 \u7899 c, ng\u7891 i v\u7883  tr\'ed [0]\
+		v\'e0o sau ti\uc0\u7871 p theo, ng\u7891 i[1]\
+\
+ngo\'e0i \uc0\u273 \u7901 i\
+	  th\uc0\u7889 ng k\'ea s\u7889  v\'e9 b\'e1n				S\u7889  ng\u432 \u7901 i th\u7921 c s\u7921  \u273 \'e3 xem phim\
+	  s\uc0\u7889  l\u432 \u7907 t ng\u432 \u7901 i mua				ko \u273 \u7871 m l\u432 \u7907 t\
+	  s\uc0\u7889  l\u432 \u7907 t ng\u432 \u7901 i gh\'e9 th\u259 m			m\u7895 i ng\u432 \u7901 i xu\u7845 t hi\u7879 n 1 l\u7847 n, d\'f9 b\u7841 n xem nhi\u7873 u\
+	  m\uc0\u7897 t ng\u432 \u7901 i c\'f3 th\u7875  \u273 \u7871 m nhi\u7873 u l\u7847 n\
+\
+C\'c1C T\uc0\u7910  	LIST(ARRAYLIST, VECTOR, \'85)\
+		SET (HASHSET, TREESET)		\uc0\u272 \u7872 U CH\u7912 A C\'d3 GI\'c3N NG\u7854 N T\u7910 , TH\'cdCH TH\'caM TH\'cc TH\'caM, KO \u272 \'c1Y NH\u431  T\'daI TH\u7846 N K\'cc C\u7910 A DORAEMON\
+		MAP (HASHMAP, TREEMAP)		CH\uc0\u7880  L\u431 U THAM CHI\u7870 U, L\u431 U CON TR\u7886 , ADD CON TR\u7886  V\'c0O, V\'d9NG NEW M\'d3N \u272 \u7890  THO\u7842 I M\'c1I \u7902  \u272 \'c2U \u272 \'d3 TRONG V\'d9NG NH\u7898  HEAP\
+									ADD V\'c0 L\uc0\u7844 Y QUA H\'c0M H\'c0NH \u272 \u7896 NG M\u7902  D\'c2Y K\'c9O, NG\u258 N\
+\
+									M\uc0\u7842 NG OBJECT Y CHANG V\u7852 Y LU\'d4N\
+									CH\uc0\u7912 A THAM CHI\u7870 U, L\u431 U CON TR\u7886  ADD L\u7844 Y CHA [I]\
+									V\'d9NG NEW M\'d3N \uc0\u272 \u7890  THO\u7842 I M\'c1I TRONG HEAP\
+\
+Y CHANG QU\uc0\u7842 N L\'cd DANH S\'c1CH NGO\'c0I \u272 \u7900 I, T\u7910  H\u7890  S\u416 }
