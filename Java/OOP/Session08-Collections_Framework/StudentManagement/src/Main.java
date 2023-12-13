@@ -7,8 +7,34 @@ public class Main {
 //        playWithArrayList();
         // sortArrayListManually();
 //        playWithSet();
-        Student test = searchStudent("SE123456");
-        test.showProfile();
+//        Student test = searchStudent("SE123456");
+//        test.showProfile();
+        sortStudentList();
+    }
+
+    // CÁC HÀM XỊN SÒ, SORT, SEARCH, CHUẨN BỊ KHO DATA
+    // 3 HÀM NÀY ĐỀU LÀ STATIC CHO MỤC TIÊU THỬ NGHIỆM, NÓ CHƯA LÀ TƯ DUY OOP
+    // TƯ DUY OOP LÀ CÁC HÀM PHẢI NẰM TRONG OBJECT NÀO ĐÓ CƠ, TƯ DUY ABSTRACTION, ENCAPSULATION
+    //                  CHẾ TAỘ CÁI TỦ, THÙNG CHỨA, CÓ CÁC HÀNH ĐỘNG: THÊM, XÓA, TÌM, SỬA, SẮP XẾP
+
+    public static  void sortStudentList() {
+        // cần chuẩn bị danh sách sv: mua cái Túi-new Túi(), cần có các hồ sơ sinh viên, new sinh-viên()
+        List<Student> arrStudents = new ArrayList<Student>();
+        arrStudents.add(new Student("SE555555", "NĂM LÊ", 2003, 5.5));
+        arrStudents.add(new Student("SE444444", "TỨ VÕ", 2003, 4.4));
+        arrStudents.add(new Student("SE999999", "CHÍN PHẠM", 2003, 9.9));
+        arrStudents.add(new Student("SE222222", "HAI TRẦN", 2003, 2.2));
+        arrStudents.add(new Student("SE888888", "TÁM LÍ", 2003, 8.8));
+        // CÁI TÚI đang có chứa thẻ bài/biến con trỏ/biến tham chiếu, 5 biên con trỏ, tham chiếu thông tin trên cardVisit chính là địa chi vùng new Student trên HEAP
+        // y chang bác sĩ cầm danh sách excel chưa thông tin các bệnh nhân, bệnh nhân cuứ nằm ở phòng bệnh, bác sĩ đi thăm sau
+        // Bác sĩ đi thăm, nhìn ds, thấy số phòng, chính là địa chỉ từng bệnh nhân
+        // Bệnh nhân1, bệnhh nhân 2, thẻ 1, thẻ 2, card 1, card 2 chính là
+        // biến con trỏ, biến con trỏ thì có địa chỉ object được new/malloc() để lấy được biến con trỏ đang chứa thông tin địa chỉ thì dùng get(i)
+        System.out.println("The student list before sorting");
+        for (Student student: arrStudents) {
+            // x = arr.get(i) | arr[i] cũ trong C -> chính là lấy tọa độ địa chỉ được lưu trong biến con trỏ/ biến tham chiếu và cất vào x
+            student.showProfile();
+        }
     }
 
     // TÌM KIẾM 1 SV TRONG DANH SÁCH, HÀM TRẢ VỀ OBJECT - 7 VIÊN NGỌC RỒNG ĐÓ HỌC RỒI NHEN BÀI 17-18 GÌ ĐÓ XEM LẠI
