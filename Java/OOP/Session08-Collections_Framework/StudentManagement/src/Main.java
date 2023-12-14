@@ -3,13 +3,67 @@ import data.Student;
 import java.util.*;
 
 public class Main {
+//    public static void main(String[] args) {
+////        playWithArrayList();
+//        // sortArrayListManually();
+////        playWithSet();
+////        Student test = searchStudent("SE123456");
+////        test.showProfile();
+//        sortStudentList();
+//    }
+
     public static void main(String[] args) {
-//        playWithArrayList();
-        // sortArrayListManually();
-//        playWithSet();
-//        Student test = searchStudent("SE123456");
-//        test.showProfile();
-        sortStudentList();
+        List<Student> arrTest = initData();  // arr ở đây trỏ thằng vào cái Túi có 5 SinhVien()
+        System.out.println("The student list");
+        for(Student x: arrTest) {
+            arrTest.showProfile();
+        }
+
+    }
+
+    // hàm chuẩn bị DATA. HÀM TRẢ VỀ 1 CÁI TÚI/ARRAYLIST/DÁNH SÁCH SINHVIEN()
+    // ĐỌC ĐÚNG: HÀM TRẢ VỀ TỌA ĐỘ VÙNG NEW ARRAYLIST() MÀ BÊN TRONG CÓ SẴN 1 ĐỐNG THẺ/ 1 ĐỐNG CON TRỎ/ GHI ĐỊA CHỈ SINHVIEN()
+    // HÀM TRẢ VỀ VỊ TRÍ 1 CÁI TÚI CÓ SẴN RỒI/MUA RỒI. TRONG TÚI CÓ GÌ...
+    //              List<Student> arr; = new Gì Đó
+    //                           initData = new ArrayList() nào đó
+    public static List<Student> initData() {
+        List<Student> arrStudents = new ArrayList<Student>();
+        arrStudents.add(new Student("SE555555", "NĂM LÊ", 2003, 5.5));
+        arrStudents.add(new Student("SE444444", "TỨ VÕ", 2003, 4.4));
+        arrStudents.add(new Student("SE999999", "CHÍN PHẠM", 2003, 9.9));
+        arrStudents.add(new Student("SE222222", "HAI TRẦN", 2003, 2.2));
+        arrStudents.add(new Student("SE888888", "TÁM LÍ", 2003, 8.8));
+        return arrStudents; // initData() = arr = new ArrayList
+        // tên-hàm cùng trỏ vào Giỏ vừa new
+        // => 2 CHÀNG LÀ ARRSTUDENTS VÀ TÊN HÀM INITDATA() CÙNG TRỎ 1 NÀNG CHÍNH LÀ NEW ARRAYLIST(BÊN TRONG CÓ 5 BIẾN CON TRỎ/THẺ BÀI SINHVIEN())
+    }
+
+    //             Strudent x = cần trỏ 1 vùng new SinhVien()
+    //                      tên hàm là 1 biến sinh viên, tên hàm này cần trỏ 1 vùng new SinhViên()
+    // Hàm trả về giá trị thì tên hàm ~~~ giá trị
+    //                                                  arr trỏ 1 cái Giỏ có sẵn
+    //                                                  Giỏ ArrayList new ở đâu đó ko care
+    //                                                  trong Giỏ có gì ko care vội, lục lọi sau
+    // Vậy xài hàm này ta cần chuẩn bị sẵn 1 cái Túi/Giỏ ở đâu đó trước rồi, có đồ bên trong luôn rồi
+    // đưa vị trí Giỏ/Túi có sẵn đó vào hàm
+    // Như là y tá đưa bác sĩ danh sách, bệnh nhân nằm sẵn ở các phòng rồi
+    // đưa mảng/Túi/Giỏ ArrayList có sẵn từ main() vào hàm này. OKIE
+    // NHƯNG KO HAY, LẬP TRÌNH LÀ MỌI THỨ TRONG HÀM -> VỚI NGÔN NGỮ C
+    // CÒN VỚI OOP THÌ            MỌI HÀM NẰM TRONG OBJECT -> OOP
+    // BÀI NÀY, ĐANG THỬ NGHIỆM, TA ĐƯA TOÀN BỘ DATA VÀO TRONG HÀM CÁI ĐÃ
+    public static Student searchAStudent(List<Student> arr, String id) {
+        // rà qua các phần tử trong mảng/Giỏ, lôi từng con trỏ/thẻ ra
+        // hỏi thẻ đó/con trỏ đó, cho tao biết SinhVien() này có id là bao nhiêu, (i).get(i)
+        //                  trỏ vào new Student()
+        // if(id mới tình == id cần tìm đưa vào) return tọa độ/địa chỉ trên cái thẻ
+        //                                               cái thẻ
+        // còn nếu ko thấy, return null, tên hàm trỏ vào null, ko có sinh viên, chấm thì bị Exception
+        // SinhVien() ko tìm thấy chấm vô nghĩa!!!
+
+        // TA CẦN 1 DANH SÁCH SINHVIEN() ĐỂ FOR
+
+
+        return null;
     }
 
     // CÁC HÀM XỊN SÒ, SORT, SEARCH, CHUẨN BỊ KHO DATA
@@ -30,11 +84,33 @@ public class Main {
         // Bác sĩ đi thăm, nhìn ds, thấy số phòng, chính là địa chỉ từng bệnh nhân
         // Bệnh nhân1, bệnhh nhân 2, thẻ 1, thẻ 2, card 1, card 2 chính là
         // biến con trỏ, biến con trỏ thì có địa chỉ object được new/malloc() để lấy được biến con trỏ đang chứa thông tin địa chỉ thì dùng get(i)
-        System.out.println("The student list before sorting");
+        System.out.println("The student list before sorting ascending by gpa");
+//        for (Student student: arrStudents) {
+//            // x = arr.get(i) | arr[i] cũ trong C -> chính là lấy tọa độ địa chỉ được lưu trong biến con trỏ/ biến tham chiếu và cất vào x
+//            student.showProfile();
+//        }
+
+        for (int i = 0; i < arrStudents.size(); i++) {
+            arrStudents.get(i).showProfile();
+        }
+        System.out.println("The student list after sorting ascending by gpa");
+        for (int i = 0; i < arrStudents.size() - 1; i++) {
+            for (int j = i + 1; j < arrStudents.size(); j++) {
+                if (arrStudents.get(i).getGpa() > arrStudents.get(j).getGpa()) {
+                    Student tmp = arrStudents.get(i);   // cất tọa độ bạn i đi
+                    arrStudents.set(i, arrStudents.get(j));
+                    arrStudents.set(j, tmp);
+                }
+            }
+        }
+
         for (Student student: arrStudents) {
-            // x = arr.get(i) | arr[i] cũ trong C -> chính là lấy tọa độ địa chỉ được lưu trong biến con trỏ/ biến tham chiếu và cất vào x
             student.showProfile();
         }
+
+        Student searchById = searchAStudent(arrStudents, "SE999999");
+        searchById.showProfile();
+
     }
 
     // TÌM KIẾM 1 SV TRONG DANH SÁCH, HÀM TRẢ VỀ OBJECT - 7 VIÊN NGỌC RỒNG ĐÓ HỌC RỒI NHEN BÀI 17-18 GÌ ĐÓ XEM LẠI
