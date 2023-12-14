@@ -12,13 +12,23 @@ public class Main {
 //        sortStudentList();
 //    }
 
-    public static void main(String[] args) {
-        List<Student> arrTest = initData();  // arr ở đây trỏ thằng vào cái Túi có 5 SinhVien()
-        System.out.println("The student list");
-        for(Student x: arrTest) {
-            arrTest.showProfile();
-        }
+//    public static void main(String[] args) {
+//        List<Student> arrStudents = initData();  // arr ở đây trỏ thằng vào cái Túi có 5 SinhVien()
+//        System.out.println("The student list");
+//        for (Student student : arrStudents) {
+//            student.showProfile();
+//        }
+//    }
 
+    public static void main(String[] args) {
+        List<Student> arrStudents = initData();
+        // 5 9 4 2 8
+        Student xStudent = searchAStudent(arrStudents, "SE888888");
+        if (xStudent == null) {
+            System.out.println("NOT FOUND STUDENT!!!");
+        } else {
+            xStudent.showProfile();
+        }
     }
 
     // hàm chuẩn bị DATA. HÀM TRẢ VỀ 1 CÁI TÚI/ARRAYLIST/DÁNH SÁCH SINHVIEN()
@@ -61,8 +71,23 @@ public class Main {
         // SinhVien() ko tìm thấy chấm vô nghĩa!!!
 
         // TA CẦN 1 DANH SÁCH SINHVIEN() ĐỂ FOR
+        if (arr.isEmpty()) {  // đưa Túi/Giỏ rỗng mới mua, làm éo có gì mà search
+            return null;        // cho mày tọa độ NULL trả về này
+        }
 
-
+        for (int i = 0; i < arr.size(); i++) {
+            // lôi cổ từng thẻ/từng biến con trỏ ra, hỏi id của mỗi sinh viên
+//            Student x = arr.get(i);
+//            String xId = x.getId(); // địnhh luật bắc cầu arr.get(i).getId;
+//            // if (xId == id) id vừa lấy của SinhVien == id đưa vào thì return tọa độ object được new
+//            if (xId.equals(id)) {
+//                return arr.get(i);
+//            }
+            if(arr.get(i).getId().equalsIgnoreCase(id)) {
+                return arr.get(i);
+            }
+        }
+        // đi hết for mà ko return được, sure ko thấy gì cả, trả ra NULL
         return null;
     }
 
