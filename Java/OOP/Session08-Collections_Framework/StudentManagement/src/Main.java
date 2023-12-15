@@ -28,6 +28,14 @@ public class Main {
             System.out.println("NOT FOUND STUDENT!!!");
         } else {
             xStudent.showProfile();
+            // Nếu tìm thấy kết quả tui sẽ update dữ liệu luôn, sửa điểm bạn TÁM THÀNH 6789
+            xStudent.setGpa(6789);
+        }
+
+        // in ra kết quả để xem sự thay đổi diểm gpa của bạn TÁM
+        System.out.println("The student list after update SE 8");
+        for (Student student: arrStudents) {
+            student.showProfile();
         }
     }
 
