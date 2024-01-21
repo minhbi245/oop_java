@@ -6,7 +6,8 @@ import java.util.Arrays;
 
 public class stage {
     public static void main(String[] args) {
-        sortObjectArrayV3();
+        playWithPrimitiveArray();
+//        sortObjectArrayV3();
     }
 
     // primitive - biến đơn giá trị, 1 vùng ram 1 giá trị, KO CÓ BAO GIỜ CHẤM PRIMITIVE HENG
