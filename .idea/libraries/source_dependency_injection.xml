@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="source_dependency-injection">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Java/OOP/Documents/java-oop-craftsman-main/source_dependency-injection/SE02D.DIDemo.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Java/OOP/Documents/java-oop-craftsman-main/source_dependency-injection/SE1501.DIDemo.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

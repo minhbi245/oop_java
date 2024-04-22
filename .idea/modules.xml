@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Java/OOP/Session06-Inheritance/AmazingRace/AmazingRace.iml" filepath="$PROJECT_DIR$/Java/OOP/Session06-Inheritance/AmazingRace/AmazingRace.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java/OOP/Session06-Inheritance/AmazingRaceV2/AmazingRaceV2.iml" filepath="$PROJECT_DIR$/Java/OOP/Session06-Inheritance/AmazingRaceV2/AmazingRaceV2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java/OOP/Session05-Array/BasicArray/BasicArray.iml" filepath="$PROJECT_DIR$/Java/OOP/Session05-Array/BasicArray/BasicArray.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java/OOP/Session06-Inheritance/BeNaV4_AbstractClass/BeNaV4_AbstractClass.iml" filepath="$PROJECT_DIR$/Java/OOP/Session06-Inheritance/BeNaV4_AbstractClass/BeNaV4_AbstractClass.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java/OOP/Session06-Inheritance/Craftsman/Craftsman.iml" filepath="$PROJECT_DIR$/Java/OOP/Session06-Inheritance/Craftsman/Craftsman.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java/OOP/Session06-Inheritance/CraftsmanV3/CraftsmanV3.iml" filepath="$PROJECT_DIR$/Java/OOP/Session06-Inheritance/CraftsmanV3/CraftsmanV3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java/OOP/Session06-Inheritance/Craftsman_V2/Craftsman_V2.iml" filepath="$PROJECT_DIR$/Java/OOP/Session06-Inheritance/Craftsman_V2/Craftsman_V2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java/OOP/Demo/Demo.iml" filepath="$PROJECT_DIR$/Java/OOP/Demo/Demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java/OOP/Class/DogManagement/DogManagement.iml" filepath="$PROJECT_DIR$/Java/OOP/Class/DogManagement/DogManagement.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java/OOP/Class/DogManagementV2/DogManagementV2.iml" filepath="$PROJECT_DIR$/Java/OOP/Class/DogManagementV2/DogManagementV2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java/OOP/Session04-Essentials/MyToys/MyToys.iml" filepath="$PROJECT_DIR$/Java/OOP/Session04-Essentials/MyToys/MyToys.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java/OOP/Session04-Essentials/Object/Object.iml" filepath="$PROJECT_DIR$/Java/OOP/Session04-Essentials/Object/Object.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java/OOP/Session06-Inheritance/ParentChild/ParentChild.iml" filepath="$PROJECT_DIR$/Java/OOP/Session06-Inheritance/ParentChild/ParentChild.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java/OOP/Session06-Inheritance/ParentChildV2/ParentChildV2.iml" filepath="$PROJECT_DIR$/Java/OOP/Session06-Inheritance/ParentChildV2/ParentChildV2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java/OOP/Session04-Essentials/Samurai/Samurai.iml" filepath="$PROJECT_DIR$/Java/OOP/Session04-Essentials/Samurai/Samurai.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java/OOP/Session07-Interface/Session07-Interface.iml" filepath="$PROJECT_DIR$/Java/OOP/Session07-Interface/Session07-Interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java/OOP/Session06-Inheritance/Shapes/Shapes.iml" filepath="$PROJECT_DIR$/Java/OOP/Session06-Inheritance/Shapes/Shapes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java/OOP/Session04-Essentials/StringClass/StringClass.iml" filepath="$PROJECT_DIR$/Java/OOP/Session04-Essentials/StringClass/StringClass.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java/OOP/Session05-Array/StudentManagement/StudentManagement.iml" filepath="$PROJECT_DIR$/Java/OOP/Session05-Array/StudentManagement/StudentManagement.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java/OOP/Class/StudentManagement/StudentManagement1.iml" filepath="$PROJECT_DIR$/Java/OOP/Class/StudentManagement/StudentManagement1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java/OOP/Session08-Collections_Framework/StudentManagement/StudentManagement2.iml" filepath="$PROJECT_DIR$/Java/OOP/Session08-Collections_Framework/StudentManagement/StudentManagement2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java/OOP/Class/StudentManagementUsingStatic/StudentManagementUsingStatic.iml" filepath="$PROJECT_DIR$/Java/OOP/Class/StudentManagementUsingStatic/StudentManagementUsingStatic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java/OOP/Session04-Essentials/StudentProfile/StudentProfile.iml" filepath="$PROJECT_DIR$/Java/OOP/Session04-Essentials/StudentProfile/StudentProfile.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java/OOP/Session08-Collections_Framework/SudentManagementV2/SudentManagementV2.iml" filepath="$PROJECT_DIR$/Java/OOP/Session08-Collections_Framework/SudentManagementV2/SudentManagementV2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java/OOP/VarAndFunc/VarAndFunc.iml" filepath="$PROJECT_DIR$/Java/OOP/VarAndFunc/VarAndFunc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java/OOP/Workshop/Workshop.iml" filepath="$PROJECT_DIR$/Java/OOP/Workshop/Workshop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java/OOP/Workshop1/Workshop1.iml" filepath="$PROJECT_DIR$/Java/OOP/Workshop1/Workshop1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java/OOP/Session04-Essentials/WrapperClass/WrapperClass.iml" filepath="$PROJECT_DIR$/Java/OOP/Session04-Essentials/WrapperClass/WrapperClass.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/oop_java.iml" filepath="$PROJECT_DIR$/.idea/oop_java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java/OOP/Documents/java-oop-craftsman-main/source_array/source_array.iml" filepath="$PROJECT_DIR$/Java/OOP/Documents/java-oop-craftsman-main/source_array/source_array.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java/OOP/Documents/java-oop-craftsman-main/source_dependency-injection/source_dependency-injection.iml" filepath="$PROJECT_DIR$/Java/OOP/Documents/java-oop-craftsman-main/source_dependency-injection/source_dependency-injection.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java/OOP/Documents/java-oop-craftsman-main/source_sample-projects/source_sample-projects.iml" filepath="$PROJECT_DIR$/Java/OOP/Documents/java-oop-craftsman-main/source_sample-projects/source_sample-projects.iml" />
+    </modules>
+  </component>
+</project>
