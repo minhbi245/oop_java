@@ -40,6 +40,6 @@ public class Dog {
     }
 
     public void getInfo() {
-        System.out.printf("|%25s|%10d|%10.2f|", name, yob, weight);
+        System.out.printf("|%25s|%10d|%10.2f|\n", name, yob, weight);
     }
 }
