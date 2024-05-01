@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="source_dependency-injection">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/SE02D.DIDemo.zip!/" />
+      <root url="jar://$PROJECT_DIR$/SE1501.DIDemo.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

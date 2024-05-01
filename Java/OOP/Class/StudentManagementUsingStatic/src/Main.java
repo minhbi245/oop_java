@@ -82,6 +82,11 @@ public class Main {
         // Có 2 cách chấm
         // chấm trực tiếp qua tên class tức là chạm sờ STATIC
         // chấm qua con đường new tức là bạn đang hàm ý chơi với non-static -> vì nó là đồ riêng của object
+        // Vùng static chung cho mọi object, cho nên giá trị vùng này dùng chung cho tất cả Sinh viên hiện tại và tương lai
+        // Như một cái WC tập thể chung cho cả dãy lầu
+        // ko nên tư hữu đồ xài chung
+        // khanh.name ~ vinh.nam ~ cuong.name ~~~~ Student.name
+
     }
 }
 

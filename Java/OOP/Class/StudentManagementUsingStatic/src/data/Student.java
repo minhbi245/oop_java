@@ -72,3 +72,12 @@ public class Student {
 //        -> static ko choi với non-static
     }
 }
+
+// Conclusion: Static chỉ có thể chơi với static vì chung 1 khu vực vùng RAM được cấp riêng 1 khu vực Static
+//              Vậy tại sao hàm main là static?
+//                  + Vì có sự quy ước chung giữa nhà phát triển hệ điệu hành, hàm main phải được load nằm cố định ở 1 vùng RAM để được load
+//                  + Mà cố định chính là static
+//==========================================================================
+//Ngoài ra ta còn khái niệm về các level như sau
+// Chiếu dưới thì ta có OBJECT LEVEL, INSTANCE LEVEL chính là tức là các thuộc tính sẽ được clone theo từng OBJECT, ăn theo từng object riêng biệt
+// Còn chiếu trên là ta có Class level, vùng nhớ dùng chung cho tất cả các Object khác, vùng tĩnh hay cố định -> static
